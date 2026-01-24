@@ -7,17 +7,7 @@ export default defineConfig({
     logo: 'https://github.com/SECTL.png',
     nav: [
       { text: '首页', link: '/' },
-      { text: 'SecRandom', link: '/secrandom' },
-      { text: 'SecScore', link: '/secscore' }
-    ],
-    sidebar: [
-      {
-        text: '项目列表',
-        items: [
-          { text: 'SecRandom', link: '/secrandom' },
-          { text: 'SecScore', link: '/secscore' }
-        ]
-      }
+      { text: 'GitHub', link: 'https://github.com/SECTL' }
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/SECTL' }
