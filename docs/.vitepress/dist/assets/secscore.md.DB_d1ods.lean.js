@@ -1,0 +1,1 @@
+import{_ as r,o as a,c as o,ae as t}from"./chunks/framework.BD9pLfSD.js";const f=JSON.parse('{"title":"SecScore","description":"","frontmatter":{},"headers":[],"relativePath":"secscore.md","filePath":"secscore.md"}'),c={name:"secscore.md"};function s(l,e,n,i,h,_){return a(),o("div",null,[...e[0]||(e[0]=[t("",7)])])}const p=r(c,[["render",s]]);export{f as __pageData,p as default};
