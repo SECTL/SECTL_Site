@@ -4,7 +4,7 @@ export default defineConfig({
   title: "SECTL",
   description: "SECTL 组织官方网站",
   themeConfig: {
-    logo: 'https://github.com/SECTL.png',
+    logo: '/SECTL_logo.svg',
     nav: [
       { text: '首页', link: '/' },
       { text: 'GitHub', link: 'https://github.com/SECTL' }
