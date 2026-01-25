@@ -134,8 +134,4 @@ html.dark .star-history-light { display: none; }
 html.dark .star-history-dark { display: block; }
 </style>
 
----
-
-Copyright © 2025-2026 SECTL.
-
 </div>
