@@ -14,7 +14,7 @@ export default defineConfig({
     ],
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2025-2026 SECTL'
+      copyright: 'Copyright © 2025-2026 SECTL <br /> <a href="https://icp.gov.moe/?keyword=20260108" target="_blank">萌ICP备20260108号</a>'
     }
   }
 })
