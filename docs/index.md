@@ -184,7 +184,7 @@ hero:
       <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;" class="actions-wrapper">
         <a href="https://github.com/SECTL/SecRandom/releases/latest" class="sectl-btn">下载最新版</a>
         <a href="https://github.com/SECTL/SecRandom" class="sectl-btn alt">GitHub 仓库</a>
-        <a href="https://github.com/SECTL/SecRandom-docs" class="sectl-btn alt">查看文档</a>
+        <a href="https://secrandom.sectl.top" class="sectl-btn alt">查看文档</a>
       </div>
       <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 20px;">
         <a href="https://github.com/SECTL/SecRandom/issues" target="_blank">
@@ -228,6 +228,7 @@ hero:
       <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;" class="actions-wrapper">
         <a href="https://github.com/SECTL/SecScore/releases/latest" class="sectl-btn">下载最新版</a>
         <a href="https://github.com/SECTL/SecScore" class="sectl-btn alt">GitHub 仓库</a>
+        <a href="https://secscore.sectl.top/" class="sectl-btn alt">查看文档</a>
       </div>
       <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 20px;">
         <a href="https://github.com/SECTL/SecScore/issues" target="_blank">
