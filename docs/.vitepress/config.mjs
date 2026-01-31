@@ -3,6 +3,9 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "SECTL",
   description: "SECTL 组织官方网站",
+  head: [
+    ['link', { rel: 'icon', href: '/SECTL_logo.svg' }]
+  ],
   themeConfig: {
     logo: '/SECTL_logo.svg',
     nav: [
@@ -14,7 +17,7 @@ export default defineConfig({
     ],
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2025-2026 SECTL'
+      copyright: 'Copyright © 2025-2026 SECTL <br /> <a href="https://icp.gov.moe/?keyword=20260108" target="_blank">萌ICP备20260108号</a>'
     }
   }
 })
