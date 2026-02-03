@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "bulletin": "Bulletin",
+    "team": "Team",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "sponsor": "Sponsor Us",
+    "title": "SECTL",
+    "subtitle": "Open Source Education Software Team",
+    "description": "We are an open-source team composed of students, dedicated to developing software that enhances teaching experiences",
+    "cta": "Learn More",
+    "githubPage": "GitHub Page",
+    "values": {
+      "open": {
+        "title": "Open Source",
+        "content": "We uphold the spirit of open source, sharing knowledge and growing with the community."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "content": "We embrace new technologies and pursue excellence in user experience."
+      },
+      "education": {
+        "title": "Education First",
+        "content": "We focus on educational scenarios and solve real problems."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Explore our open-source projects developed to enhance teaching experiences",
+    "stars": "Stars",
+    "downloads": "Downloads",
+    "github": "GitHub Repository",
+    "docs": "Documentation",
+    "download": {
+      "title": "Download",
+      "Setup": "Setup",
+      "Portable": "Portable"
+    },
+    "SecRandom": {
+      "description": "An easy-to-use roll call/lottery software designed for educational scenarios to make classroom roll call more efficient and transparent!"
+    },
+    "SecScore": {
+      "description": "A simple, easy-to-use, elegant and beautiful class personal points management software."
+    }
+  },
+  "team": {
+    "title": "Team",
+    "description": "Meet the passionate students behind SECTL"
+  },
+  "about": {
+    "title": "About",
+    "description": "Learn about SECTL's mission and vision",
+    "mission": {
+      "title": "Our Mission",
+      "content": "SECTL is an open-source team composed of passionate students. We are dedicated to developing innovative educational software that enhances the teaching experience and makes learning more efficient and enjoyable."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "content": "We believe technology can transform education. Through open-source collaboration, we hope to create a vibrant community that advances educational technology together, making quality teaching tools accessible to every student and teacher."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Welcome to join our community",
+    "github": {
+      "title": "GitHub"
+    },
+    "email": {
+      "title": "Email"
+    },
+    "qqGroup": {
+      "title": "QQ Group"
+    },
+    "qqChannel": {
+      "title": "QQ Channel"
+    },
+    "discord": {
+      "title": "Discord"
+    },
+    "bilibili": {
+      "title": "bilibili"
+    }
+  },
+  "bulletin": {
+    "title": "Bulletin",
+    "description": "Latest updates, activities, and plans from the team",
+    "readMore": "Read more",
+    "back": "Back to bulletins"
+  },
+  "footer": {
+    "links": {
+      "title": "Friendship Links",
+      "stcnForum": "SmartTeach Forum"
+    }
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode",
+    "system": "System"
+  }
+}

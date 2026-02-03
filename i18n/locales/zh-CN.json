@@ -1,0 +1,106 @@
+{
+  "nav": {
+    "home": "首页",
+    "projects": "项目",
+    "bulletin": "公告",
+    "team": "团队",
+    "about": "关于",
+    "contact": "联系"
+  },
+  "home": {
+    "sponsor": "赞助我们",
+    "title": "SECTL",
+    "subtitle": "开源教学软件团队",
+    "description": "我们是由在读学生组成的开源团队，致力于开发助力教学体验的软件",
+    "cta": "了解更多",
+    "githubPage": "GitHub 主页",
+    "values": {
+      "open": {
+        "title": "开源开放",
+        "content": "我们坚持开源精神，分享知识，与社区共同成长。"
+      },
+      "innovation": {
+        "title": "创新实践",
+        "content": "我们勇于尝试新技术，追求卓越的用户体验。"
+      },
+      "education": {
+        "title": "教育优先",
+        "content": "我们专注于教育场景，解决实际问题。"
+      }
+    }
+  },
+  "projects": {
+    "title": "项目",
+    "description": "探索我们为提升教学体验而开发的开源项目",
+    "stars": "星标",
+    "downloads": "下载",
+    "github": "GitHub 仓库",
+    "docs": "文档",
+    "download": {
+      "title": "下载",
+      "Setup": "安装程序",
+      "Portable": "便携版"
+    },
+    "SecRandom": {
+      "description": "一个易用的点名/抽奖软件，专为教育场景设计，让课堂点名更高效透明！"
+    },
+    "SecScore": {
+      "description": "一个简单易用，优雅美观的班级个人积分管理软件。"
+    }
+  },
+  "team": {
+    "title": "团队",
+    "description": "认识 SECTL 背后充满热情的在读学生"
+  },
+  "about": {
+    "title": "关于",
+    "description": "了解 SECTL 的使命和愿景",
+    "mission": {
+      "title": "我们的使命",
+      "content": "SECTL 是由充满热情的在读学生组成的开源团队。我们致力于开发创新的教学软件，提升教育体验，让学习变得更加高效和有趣。"
+    },
+    "vision": {
+      "title": "我们的愿景",
+      "content": "我们相信技术可以改变教育。通过开源协作，我们希望创建一个充满活力的社区，共同推动教育技术的发展，让优质的教学工具惠及每一位学生和教师。"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "description": "欢迎加入我们的社区",
+    "github": {
+      "title": "GitHub"
+    },
+    "email": {
+      "title": "邮箱"
+    },
+    "qqGroup": {
+      "title": "QQ 群"
+    },
+    "qqChannel": {
+      "title": "QQ 频道"
+    },
+    "discord": {
+      "title": "Discord"
+    },
+    "bilibili": {
+      "title": "哔哩哔哩"
+    }
+  },
+  "bulletin": {
+    "title": "公告",
+    "description": "了解团队最新动态、活动与计划",
+    "readMore": "查看详情",
+    "back": "返回公告列表"
+  },
+  "footer": {
+    "links": {
+      "title": "友情链接",
+      "stcnForum": "智教联盟论坛"
+    }
+  },
+  "theme": {
+    "light": "浅色模式",
+    "dark": "深色模式",
+    "system": "跟随系统"
+  }
+}
