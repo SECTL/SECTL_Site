@@ -27,68 +27,51 @@ const currentBulletin = computed(() => {
 
 const htmlContent = ref('')
 
-onMounted(async () => {
-  if (currentBulletin.value) {
-    try {
-      const response = await fetch(currentBulletin.value.contentPath)
-      const html = await response.text()
-      const locale_value = locale.value
-      
-      // 创建临时 div 解析 HTML
-      const tempDiv = document.createElement('div')
-      tempDiv.innerHTML = html
-      
-      // 根据 lang 属性筛选对应语言的内容
-      const targetElements = tempDiv.querySelectorAll(`[lang="${locale_value}"]`)
-      
-      if (targetElements.length > 0) {
-        // 合并所有目标语言的内容
-        const contentDiv = document.createElement('div')
-        targetElements.forEach(el => {
-          const clone = el.cloneNode(true) as Element
-          clone.removeAttribute('lang')
-          contentDiv.appendChild(clone)
-        })
-        htmlContent.value = contentDiv.innerHTML
-      } else {
-        htmlContent.value = html
-      }
-    } catch (error) {
-      console.error('Failed to load bulletin content:', error)
-      htmlContent.value = ''
-    }
+const normalizeContentPath = (path: string) => (path.endsWith('.html') ? path : `${path}.html`)
+
+const extractLocalizedContent = (html: string, localeValue: string) => {
+  const tempDiv = document.createElement('div')
+  tempDiv.innerHTML = html
+
+  const targetElements = tempDiv.querySelectorAll(`[lang="${localeValue}"]`)
+
+  if (targetElements.length === 0) {
+    return html
   }
-})
+
+  const contentDiv = document.createElement('div')
+  targetElements.forEach(el => {
+    const clone = el.cloneNode(true) as Element
+    clone.removeAttribute('lang')
+    contentDiv.appendChild(clone)
+  })
+
+  return contentDiv.innerHTML
+}
+
+const loadBulletinContent = async () => {
+  if (!currentBulletin.value) return
+
+  try {
+    const contentPath = normalizeContentPath(currentBulletin.value.contentPath)
+    const response = await fetch(contentPath)
+
+    if (!response.ok) {
+      throw new Error(`Failed to load bulletin content: ${response.status}`)
+    }
+
+    const html = await response.text()
+    htmlContent.value = extractLocalizedContent(html, locale.value)
+  } catch (error) {
+    console.error('Failed to load bulletin content:', error)
+    htmlContent.value = ''
+  }
+}
+
+onMounted(loadBulletinContent)
 
 // 监听语言变化重新加载内容
-watch(() => locale.value, async () => {
-  if (currentBulletin.value) {
-    try {
-      const response = await fetch(currentBulletin.value.contentPath)
-      const html = await response.text()
-      const locale_value = locale.value
-      
-      const tempDiv = document.createElement('div')
-      tempDiv.innerHTML = html
-      
-      const targetElements = tempDiv.querySelectorAll(`[lang="${locale_value}"]`)
-      
-      if (targetElements.length > 0) {
-        const contentDiv = document.createElement('div')
-        targetElements.forEach(el => {
-          const clone = el.cloneNode(true) as Element
-          clone.removeAttribute('lang')
-          contentDiv.appendChild(clone)
-        })
-        htmlContent.value = contentDiv.innerHTML
-      } else {
-        htmlContent.value = html
-      }
-    } catch (error) {
-      console.error('Failed to load bulletin content:', error)
-    }
-  }
-})
+watch(() => locale.value, loadBulletinContent)
 
 if (!currentBulletin.value) {
   throw createError({ statusCode: 404, statusMessage: '公告不存在' })

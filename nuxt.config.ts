@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   
   // SSG 模式
   ssr: true,
-  
+
   modules: [
     '@nuxt/icon',
     '@nuxtjs/color-mode',
@@ -28,6 +28,7 @@ export default defineNuxtConfig({
     preference: 'system',
     fallback: 'light',
     classSuffix: '',
+    storage: 'sessionStorage',
     storageKey: 'nuxt-color-mode'
   },
 
