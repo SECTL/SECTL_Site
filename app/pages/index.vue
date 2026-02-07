@@ -18,8 +18,12 @@
           <p class="hero-description">{{ t('home.description') }}</p>
           <div class="hero-actions">
             <NuxtLink :to="localePath('/about')" class="btn">
+              <Icon name="ph:code" size="20" />
               {{ t('home.cta') }}
-              <Icon name="ph:arrow-right" size="20" />
+            </NuxtLink>
+            <NuxtLink :to="localePath('/bulletin')" class="btn">
+              <Icon name="ph:newspaper" size="20" />
+              {{ t('home.viewBulletin') }}
             </NuxtLink>
             <a href="https://github.com/SECTL" target="_blank" rel="noopener" class="btn btn-ghost">
               <Icon name="mdi:github" size="20" />

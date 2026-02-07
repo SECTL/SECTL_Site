@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   
   // SSG 模式
   ssr: true,
+  nitro: {
+    preset: 'static'
+  },
 
   modules: [
     '@nuxt/icon',
@@ -35,6 +38,7 @@ export default defineNuxtConfig({
   // 站点地图配置
   site: {
     url: 'https://sectl.org',
+    name: 'SECTL'
   },
 
   // CSS 样式
