@@ -1,5 +1,18 @@
 [
   {
+    "slug": "mc-server",
+    "date": "2026-02-07",
+    "contentPath": "/bulletins/mc-server.html",
+    "zh": {
+      "title": "SECTL MC 服务器开放",
+      "description": "1.21 | Fabric 模组端 | 纯生存 | 进服请加QQ群 905548779"
+    },
+    "en": {
+      "title": "SECTL Minecraft Server",
+      "description": "1.21 | Fabric modded client | Pure Survival | Join QQ group 905548779"
+    }
+  },
+  {
     "slug": "community-rules",
     "date": "2025-01-25",
     "contentPath": "/bulletins/community-rules.html",
