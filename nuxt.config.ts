@@ -5,9 +5,6 @@ export default defineNuxtConfig({
   
   // SSG 模式
   ssr: true,
-  nitro: {
-    preset: 'static'
-  },
 
   modules: [
     '@nuxt/icon',
