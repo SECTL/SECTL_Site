@@ -48,12 +48,19 @@
 
       <div class="footer-bottom">
         <!-- 版权信息 -->
-        <p v-if="locale === 'zh-CN'">
-          © 2025-{{ currentYear }} SECTL. 保留所有权利。
-        </p>
-        <p v-else>
-          © 2025-{{ currentYear }} SECTL. All rights reserved.
-        </p>
+        <div class="footer-bottom-left">
+          <p v-if="locale === 'zh-CN'">
+            © 2025-{{ currentYear }} SECTL. 保留所有权利。
+          </p>
+          <p v-else>
+            © 2025-{{ currentYear }} SECTL. All rights reserved.
+          </p>
+          <p>
+            <a href="https://icp.gov.moe/?keyword=20260108" target="_blank" rel="noopener noreferrer">
+              {{ t('footer.icp') }}
+            </a>
+          </p>
+        </div>
 
         <!-- 设计者信息 -->
         <p v-if="locale === 'zh-CN'">
@@ -164,6 +171,13 @@ const currentYear = new Date().getFullYear()
   text-align: center;
   font-size: 0.875rem;
   color: var(--color-text-secondary);
+}
+
+.footer-bottom-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
 @media (min-width: 768px) {

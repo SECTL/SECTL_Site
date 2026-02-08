@@ -17,7 +17,7 @@
           <p class="hero-subtitle">{{ t('home.subtitle') }}</p>
           <p class="hero-description">{{ t('home.description') }}</p>
           <div class="hero-actions">
-            <NuxtLink :to="localePath('/about')" class="btn">
+            <NuxtLink :to="localePath('/projects')" class="btn">
               <Icon name="ph:code" size="20" />
               {{ t('home.cta') }}
             </NuxtLink>
