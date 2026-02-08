@@ -112,6 +112,11 @@ const { title, date, description, backTo } = toRefs(props)
   margin-bottom: 0.4rem;
 }
 
+.bulletin-content {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .bulletin-content :deep(ul),
 .bulletin-content :deep(ol) {
   padding-left: 1.2rem;
@@ -126,6 +131,8 @@ const { title, date, description, backTo } = toRefs(props)
 .bulletin-content :deep(a) {
   color: var(--color-primary);
   transition: all 0.2s ease;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .bulletin-content :deep(a:hover) {

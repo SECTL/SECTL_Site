@@ -163,20 +163,34 @@ useSeoMeta({
 .hero {
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
 /* 背景装饰光晕 */
 .hero::before {
   content: '';
   position: absolute;
-  top: -80%;
+  top: calc(-1 * var(--header-height));
   left: 50%;
   transform: translateX(-50%);
-  width: 700px;
-  height: 700px;
-  background: radial-gradient(circle, rgba(var(--color-primary-rgb), 0.08) 0%, transparent 70%);
+  width: min(700px, 90vw);
+  height: min(700px, 90vw);
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(var(--color-primary-rgb), 0.12) 0%,
+    rgba(var(--color-primary-rgb), 0.06) 45%,
+    transparent 75%
+  );
+  filter: blur(8px);
+  opacity: 0.9;
   pointer-events: none;
   z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .hero::before {
+    top: calc(-1 * var(--header-height));
+  }
 }
 
 .hero-content {

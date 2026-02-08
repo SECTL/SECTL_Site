@@ -192,4 +192,11 @@ const currentYear = new Date().getFullYear()
     justify-content: space-between;
   }
 }
+
+@media (max-width: 767px) {
+  .footer-bottom {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
 </style>
