@@ -28,56 +28,6 @@
     </ol>
   </section>
 
-  <section id="plugins">
-    <h3>🔌 插件功能</h3>
-    <p>服务器安装了以下插件，提供额外的游戏功能：</p>
-    
-    <h4>GSit - 姿态系统</h4>
-    <ul>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/sit</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/gsit</span> → 坐在方块上</li>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/lay</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/glay</span> → 躺在方块上</li>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/bellyflop</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/gbellyflop</span> → 趴在方块上</li>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/spin</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/gspin</span> → 在方块上转圈</li>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/crawl</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/gcrawl</span> → 在地上爬行</li>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/sit toggle</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/sit playertoggle</span> → 切换点击方块或玩家的功能</li>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/crawl toggle</span> → 切换使用再次潜行来爬行的功能</li>
-    </ul>
-    <p>💡 提示：也可以右键板砖、楼梯坐下</p>
-    
-    <h4>BlockLocker - 容器锁定</h4>
-    <ul>
-      <li>拿着告示牌对着容器直接右键可以锁定</li>
-      <li>如果还要加人，可以右键告示牌，换行加可访问的人</li>
-    </ul>
-    
-    <h4>WorldGuard - 领地</h4>
-    <ul>
-      <li>可以创建和管理领地，保护自己的建筑和物品</li>
-      <li>详细使用方法请参考：<a href="https://doc.mcbbs.co/snowcutieowo/wiki/WorldGuard/regions/quick-start" target="_blank" rel="noopener">WorldGuard 快速开始文档</a></li>
-    </ul>
-    
-    <h4>VeinMiner - 连锁挖矿</h4>
-    <ul>
-      <li>直接左键方块可以一次性挖掉相连的同种矿石</li>
-      <li>支持多种矿石类型</li>
-    </ul>
-    
-    <h4>传送指令</h4>
-    <ul>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tpa</span> → 请求传送到某玩家</li>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tpaall</span> → 请求所有玩家传送到自己</li>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tpacancel</span> → 取消传送请求</li>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tpaccept</span> → 接受传送请求</li>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tpahere</span> → 请求某玩家传送到自己</li>
-    </ul>
-    
-    <h4>其他功能</h4>
-    <ul>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tellraw</span> → 悄悄告诉某人，但不会显示发送的玩家名称</li>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/fly</span> → 在生存模式下起飞</li>
-    </ul>
-  </section>
-
   <section id="rules-toc">
     <h3>📑 目录</h3>
     <ul>
@@ -90,6 +40,61 @@
       <li><a href="#punishments">处罚规则</a></li>
       <li><a href="#appeals">申诉与沟通</a></li>
       <li><a href="#reporting">举报</a></li>
+    </ul>
+  </section>
+
+  <section id="plugins">
+    <h3>🔌 插件功能</h3>
+    <p>服务器安装了以下插件，提供额外的游戏功能：</p>
+    
+    <h4 id="gsit">GSit - 姿态系统</h4>
+    <ul>
+      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/sit</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/gsit</span> → 坐在方块上</li>
+      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/lay</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/glay</span> → 躺在方块上</li>
+      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/bellyflop</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/gbellyflop</span> → 趴在方块上</li>
+      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/spin</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/gspin</span> → 在方块上转圈</li>
+      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/crawl</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/gcrawl</span> → 在地上爬行</li>
+      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/sit toggle</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/sit playertoggle</span> → 切换点击方块或玩家的功能</li>
+      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/crawl toggle</span> → 切换使用再次潜行来爬行的功能</li>
+    </ul>
+    <p>💡 提示：也可以右键板砖、楼梯坐下</p>
+    
+    <h4 id="blocklocker">BlockLocker - 容器锁定</h4>
+    <ul>
+      <li>拿着告示牌对着容器直接右键可以锁定</li>
+      <li>如果还要加人，可以右键告示牌，换行加可访问的人</li>
+    </ul>
+    
+    <h4 id="worldguard">WorldGuard - 领地</h4>
+    <ul>
+      <li>可以创建和管理领地，保护自己的建筑和物品</li>
+      <li>详细使用方法请参考：<a href="https://doc.mcbbs.co/snowcutieowo/wiki/WorldGuard/regions/quick-start" target="_blank" rel="noopener">WorldGuard 快速开始文档</a></li>
+    </ul>
+    
+    <h4 id="veinminer">VeinMiner - 连锁挖矿</h4>
+    <ul>
+      <li>直接左键方块可以一次性挖掉相连的同种矿石</li>
+      <li>支持多种矿石类型</li>
+    </ul>
+    
+    <h4 id="imageframe">ImageFrame - 图片展示</h4>
+    <ul>
+      <li>可以将图片用地图的方式放到游戏中进行展示，具体使用方法请自行搜索相关教程</li>
+    </ul>
+    
+    <h4 id="teleport">传送指令</h4>
+    <ul>
+      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tpa</span> → 请求传送到某玩家</li>
+      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tpaall</span> → 请求所有玩家传送到自己</li>
+      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tpacancel</span> → 取消传送请求</li>
+      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tpaccept</span> → 接受传送请求</li>
+      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tpahere</span> → 请求某玩家传送到自己</li>
+    </ul>
+    
+    <h4>其他功能</h4>
+    <ul>
+      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tellraw</span> → 悄悄告诉某人，但不会显示发送的玩家名称</li>
+      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/fly</span> → 在生存模式下起飞</li>
     </ul>
   </section>
 
@@ -282,6 +287,11 @@
     <ul>
       <li>Left-click a block to mine all connected ores of the same type at once</li>
       <li>Supports multiple ore types</li>
+    </ul>
+    
+    <h4>ImageFrame - Image Display</h4>
+    <ul>
+      <li>Can display images in-game using maps. For detailed usage, please search for related tutorials</li>
     </ul>
     
     <h4>Teleportation Commands</h4>
