@@ -80,14 +80,16 @@ watch(() => useRoute().path, () => {
   left: 0;
   right: 0;
   z-index: 100;
-  background-color: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
-  backdrop-filter: blur(10px);
-  background-color: rgba(var(--color-bg-rgb, 255, 255, 255), 0.8);
+  background: rgba(248, 250, 252, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dark .header {
-  background-color: rgba(10, 10, 10, 0.8);
+  background: rgba(15, 23, 42, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .nav {
@@ -105,6 +107,12 @@ watch(() => useRoute().path, () => {
   font-weight: 700;
   color: var(--color-text);
   text-decoration: none;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo:hover {
+  transform: scale(1.03);
+  color: var(--color-text);
 }
 
 .logo-text {
@@ -112,6 +120,7 @@ watch(() => useRoute().path, () => {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  letter-spacing: 0.02em;
 }
 
 .nav-links {
@@ -147,12 +156,13 @@ watch(() => useRoute().path, () => {
 
 .nav-link.router-link-active {
   color: var(--color-primary);
+  background-color: rgba(var(--color-primary-rgb), 0.08);
 }
 
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
+  gap: 0.5rem;
 }
 
 .mobile-menu-btn {
@@ -164,6 +174,11 @@ watch(() => useRoute().path, () => {
   color: var(--color-text);
   background-color: transparent;
   border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+  background-color: var(--color-bg-secondary);
 }
 
 @media (min-width: 768px) {
@@ -189,23 +204,26 @@ watch(() => useRoute().path, () => {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: var(--spacing-sm) 0;
+  padding: var(--spacing-sm) var(--spacing-xs);
   font-weight: 500;
   color: var(--color-text-secondary);
-  transition: color 0.2s ease;
+  border-radius: var(--radius-md);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-nav-link:hover {
   color: var(--color-text);
+  background-color: var(--color-bg-secondary);
 }
 
 .mobile-nav-link.router-link-active {
   color: var(--color-primary);
+  background-color: rgba(var(--color-primary-rgb), 0.08);
 }
 
 .mobile-menu-enter-active,
 .mobile-menu-leave-active {
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-enter-from,

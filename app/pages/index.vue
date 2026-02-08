@@ -9,13 +9,16 @@
             target="_blank"
             rel="noopener"
           >
-            <Icon name="ep:milk-tea" size="16" />
+            <Icon name="twemoji:bubble-tea" size="18" />
             <p>{{ t('home.sponsor') }}</p>
             <Icon name="ph:arrow-up-right" size="16" />
           </a>
           <h1 class="hero-title">{{ t('home.title') }}</h1>
           <p class="hero-subtitle">{{ t('home.subtitle') }}</p>
-          <p class="hero-description">{{ t('home.description') }}</p>
+          <p class="hero-description">
+            <span class="typewriter-text" ref="typewriterRef"></span>
+            <span class="typewriter-cursor"></span>
+          </p>
           <div class="hero-actions">
             <NuxtLink :to="localePath('/projects')" class="btn">
               <Icon name="ph:code" size="20" />
@@ -67,8 +70,84 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const localePath = useLocalePath()
+
+const typewriterRef = ref<HTMLElement | null>(null)
+
+// 将描述文本按照标点符号拆分为半句
+function splitDescription(text: string): string[] {
+  // 按中文逗号、英文逗号、中文句号、英文句号等标点拆分
+  const parts = text.split(/(?<=[，,、；;。.！!？?])/)
+  return parts.filter(p => p.trim().length > 0)
+}
+
+let typewriterTimeout: ReturnType<typeof setTimeout> | null = null
+
+function startTypewriter() {
+  const el = typewriterRef.value
+  if (!el) return
+
+  const fullText = t('home.description')
+  const segments = splitDescription(fullText)
+  const safeSegments = segments.length > 0 ? segments : [fullText]
+  let segIndex = 0
+  let charIndex = 0
+  let isDeleting = false
+
+  function tick() {
+    const segment = safeSegments[segIndex] ?? ''
+    if (!segment) {
+      typewriterTimeout = setTimeout(tick, 500)
+      return
+    }
+
+    if (!isDeleting) {
+      // 打字
+      charIndex++
+      el!.textContent = segment.substring(0, charIndex)
+
+      if (charIndex >= segment.length) {
+        // 当前半句打完，停顿后开始删除
+        typewriterTimeout = setTimeout(() => {
+          isDeleting = true
+          tick()
+        }, 2000)
+        return
+      }
+      typewriterTimeout = setTimeout(tick, 80)
+    } else {
+      // 删除
+      charIndex--
+      el!.textContent = segment.substring(0, charIndex)
+
+      if (charIndex <= 0) {
+        // 删完，切换到下一段
+        isDeleting = false
+        segIndex = (segIndex + 1) % safeSegments.length
+        typewriterTimeout = setTimeout(tick, 500)
+        return
+      }
+      typewriterTimeout = setTimeout(tick, 30)
+    }
+  }
+
+  tick()
+}
+
+onMounted(() => {
+  startTypewriter()
+})
+
+onUnmounted(() => {
+  if (typewriterTimeout) clearTimeout(typewriterTimeout)
+})
+
+// 语言切换时重新启动打字机
+watch(() => locale.value, () => {
+  if (typewriterTimeout) clearTimeout(typewriterTimeout)
+  nextTick(() => startTypewriter())
+})
 
 useSeoMeta({
   title: 'SECTL - ' + t('home.subtitle'),
@@ -83,11 +162,28 @@ useSeoMeta({
 <style scoped>
 .hero {
   text-align: center;
+  position: relative;
+}
+
+/* 背景装饰光晕 */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -80%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(var(--color-primary-rgb), 0.08) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .sponsor-badge {
@@ -96,31 +192,34 @@ useSeoMeta({
   gap: 0.4em;
   font-size: 0.8rem;
   color: var(--color-primary);
-  background: var(--color-card-bg);
-  border: 1.5px solid var(--color-primary);
-  border-radius: 16px;
-  padding: 0.2em 0.8em;
-  transition: box-shadow 0.2s, transform 0.25s cubic-bezier(.4,1.6,.6,1);
-  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.03);
-}
-
-.sponsor-badge {
-  margin: 0 0.2em;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 9999px;
+  padding: 0.3em 0.9em;
+  font-weight: 600;
+  animation: pulse-badge 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .sponsor-badge:hover {
   cursor: pointer;
+  animation: none;
   transform: translateY(-2px) scale(1.02);
 }
 
+@keyframes pulse-badge {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 800;
-  margin-bottom: var(--spacing-md);
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  letter-spacing: -0.03em;
 }
 
 @media (min-width: 768px) {
@@ -131,16 +230,35 @@ useSeoMeta({
 
 .hero-subtitle {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-text);
-  margin-bottom: var(--spacing-md);
+  letter-spacing: -0.02em;
 }
 
 .hero-description {
-  font-size: 1.125rem;
+  font-size: 1.75rem;
   color: var(--color-text-secondary);
-  margin-bottom: var(--spacing-xl);
   line-height: 1.8;
+  min-height: 2.4em;
+}
+
+.typewriter-text {
+  display: inline;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: var(--color-primary);
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  animation: blink-cursor 0.7s infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .hero-actions {
@@ -157,6 +275,7 @@ useSeoMeta({
 .feature-card {
   text-align: center;
   padding: var(--spacing-xl);
+  position: relative;
 }
 
 .feature-icon {
@@ -169,6 +288,13 @@ useSeoMeta({
   border-radius: var(--radius-lg);
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
   color: white;
+  box-shadow: 0 8px 20px rgba(var(--color-primary-rgb), 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-card:hover .feature-icon {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 12px 30px rgba(var(--color-primary-rgb), 0.35);
 }
 
 .feature-card h3 {
@@ -178,6 +304,6 @@ useSeoMeta({
 
 .feature-card p {
   color: var(--color-text-secondary);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 </style>

@@ -131,6 +131,7 @@ useSeoMeta({
 
 .page-header h1 {
   margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.03em;
 }
 
 .page-header p {
@@ -143,6 +144,8 @@ useSeoMeta({
   flex-direction: row;
   align-items: stretch;
   gap: var(--spacing-md);
+  position: relative;
+  overflow: hidden;
 }
 
 .member-avatar {
@@ -153,6 +156,13 @@ useSeoMeta({
   object-fit: cover;
   flex-shrink: 0;
   align-self: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.member-card:hover .member-avatar {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(var(--color-primary-rgb), 0.2);
 }
 
 .member-info {
@@ -165,12 +175,17 @@ useSeoMeta({
 .member-card h3 {
   font-size: 1.25rem;
   margin-bottom: 0;
+  transition: color 0.3s ease;
+}
+
+.member-card:hover h3 {
+  color: var(--color-primary);
 }
 
 .member-role {
   color: var(--color-primary);
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
   letter-spacing: 0.05em;
 }
 
@@ -184,11 +199,17 @@ useSeoMeta({
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-text);
-  transition: all 0.2s ease;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  background: var(--color-bg-secondary);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .member-links a:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.2);
 }
 </style>

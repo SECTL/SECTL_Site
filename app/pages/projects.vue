@@ -369,6 +369,7 @@ useSeoMeta({
 
 .page-header h1 {
   margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.03em;
 }
 
 .page-header p {
@@ -402,7 +403,7 @@ useSeoMeta({
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--color-text-secondary);
 }
 
@@ -410,7 +411,7 @@ useSeoMeta({
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--color-text-secondary);
 }
 
@@ -419,16 +420,28 @@ useSeoMeta({
   height: 64px;
   border-radius: var(--radius-md);
   object-fit: cover;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-static:hover .project-icon {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(var(--color-primary-rgb), 0.15);
 }
 
 .project-info h3 {
   margin-bottom: 0.25rem;
   font-size: 1.25rem;
+  transition: color 0.3s ease;
+}
+
+.card-static:hover .project-info h3 {
+  color: var(--color-primary);
 }
 
 .project-description {
   color: var(--color-text-secondary);
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .project-actions {
@@ -478,14 +491,16 @@ useSeoMeta({
 .download-menu {
   position: absolute;
   top: 110%;
-  background: var(--color-bg);
-  border: 0.25px solid var(--color-border);
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-xl);
   display: flex;
   flex-direction: column;
   padding: 0.35rem;
   width: auto;
+  backdrop-filter: blur(12px);
+  z-index: 999;
 }
 
 .download-option-group {
@@ -503,8 +518,8 @@ useSeoMeta({
   font-size: 0.95rem;
   color: var(--color-text-secondary);
   cursor: pointer;
-  border-radius: var(--radius-lg);
-  transition: background 0.2s, color 0.2s;
+  border-radius: var(--radius-md);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   gap: 0.65rem;
@@ -513,8 +528,8 @@ useSeoMeta({
 }
 
 .download-menu-item:hover {
-  background: var(--color-bg-secondary);
-  color: var(--color-text);
+  background: var(--color-card-hover);
+  color: var(--color-primary);
   border-radius: var(--radius-md);
 }
 
@@ -544,16 +559,16 @@ useSeoMeta({
 }
 
 .scale-center-enter-active {
-  transition: all 0.2s ease-out;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: center center;
 }
 
 .scale-center-leave-active {
-  transition: opacity 0.1s ease-out;
+  transition: opacity 0.15s ease-out;
 }
 
 .scale-center-enter-from {
-  transform: scale(0.9);
+  transform: scale(0.92);
   opacity: 0;
   box-shadow: var(--shadow-sm);
 }
@@ -565,7 +580,7 @@ useSeoMeta({
 .scale-center-enter-to {
   transform: scale(1);
   opacity: 1;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-xl);
 }
 
 .star-history {
@@ -573,8 +588,14 @@ useSeoMeta({
   justify-content: center;
   margin-top: 2rem;
   padding: 1em;
-  border: 1.5px solid var(--color-border);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.star-history:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(var(--color-primary-rgb), 0.2);
 }
 
 .star-history img {

@@ -73,6 +73,10 @@ useSeoMeta({
   margin: 0 auto var(--spacing-2xl);
 }
 
+.page-header h1 {
+  letter-spacing: -0.03em;
+}
+
 .page-header p {
   color: var(--color-text-secondary);
   font-size: 1.125rem;
@@ -95,11 +99,20 @@ useSeoMeta({
   gap: var(--spacing-xs);
 }
 
+.bulletin-card-header h3 {
+  transition: color 0.3s ease;
+}
+
+.card-static:hover .bulletin-card-header h3 {
+  color: var(--color-primary);
+}
+
 .bulletin-date {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   color: var(--color-text-secondary);
+  font-size: 0.85rem;
 }
 
 .bulletin-description {
@@ -112,11 +125,13 @@ useSeoMeta({
   align-items: center;
   gap: 0.4rem;
   color: var(--color-primary);
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 0.9rem;
   margin-top: auto;
   align-self: flex-end;
   position: relative;
   padding-bottom: 0.15rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bulletin-readmore::after {
@@ -126,10 +141,14 @@ useSeoMeta({
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: currentColor;
+  background: var(--color-primary);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bulletin-readmore:hover {
+  transform: translateX(4px);
 }
 
 .bulletin-readmore:hover::after {

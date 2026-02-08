@@ -13,6 +13,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--color-bg);
+  transition: background-color 0.3s ease;
 }
 
 .main {

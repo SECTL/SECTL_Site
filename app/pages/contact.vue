@@ -93,6 +93,7 @@ useSeoMeta({
 
 .page-header h1 {
   margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.03em;
 }
 
 .page-header p {
@@ -126,6 +127,8 @@ useSeoMeta({
   padding: var(--spacing-lg);
   text-decoration: none;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
 .contact-icon {
@@ -137,12 +140,14 @@ useSeoMeta({
   border-radius: var(--radius-lg);
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
   color: white;
-  transition: transform 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
+  box-shadow: 0 6px 16px rgba(var(--color-primary-rgb), 0.2);
 }
 
 .contact-card:hover .contact-icon {
-  transform: scale(1.1);
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 10px 25px rgba(var(--color-primary-rgb), 0.3);
 }
 
 .contact-info {
@@ -153,13 +158,19 @@ useSeoMeta({
 }
 
 .contact-card h3 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
+  font-weight: 600;
   margin-bottom: 0;
   color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+.contact-card:hover h3 {
+  color: var(--color-primary);
 }
 
 .contact-value {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--color-text-secondary);
 }
 </style>
