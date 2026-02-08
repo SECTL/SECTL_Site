@@ -28,7 +28,7 @@ const toggleTheme = () => {
   border-radius: var(--radius-md);
   background-color: transparent;
   color: var(--color-text);
-  transition: background-color 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .theme-toggle:hover {

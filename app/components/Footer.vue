@@ -48,12 +48,19 @@
 
       <div class="footer-bottom">
         <!-- 版权信息 -->
-        <p v-if="locale === 'zh-CN'">
-          © 2025-{{ currentYear }} SECTL. 保留所有权利。
-        </p>
-        <p v-else>
-          © 2025-{{ currentYear }} SECTL. All rights reserved.
-        </p>
+        <div class="footer-bottom-left">
+          <p v-if="locale === 'zh-CN'">
+            © 2025-{{ currentYear }} SECTL. 保留所有权利。
+          </p>
+          <p v-else>
+            © 2025-{{ currentYear }} SECTL. All rights reserved.
+          </p>
+          <p>
+            <a href="https://icp.gov.moe/?keyword=20260108" target="_blank" rel="noopener noreferrer">
+              {{ t('footer.icp') }}
+            </a>
+          </p>
+        </div>
 
         <!-- 设计者信息 -->
         <p v-if="locale === 'zh-CN'">
@@ -78,6 +85,7 @@ const currentYear = new Date().getFullYear()
   padding: var(--spacing-2xl) 0 var(--spacing-lg);
   border-top: 1px solid var(--color-border);
   background-color: var(--color-bg-footer);
+  position: relative;
 }
 
 .footer-content {
@@ -100,16 +108,18 @@ const currentYear = new Date().getFullYear()
 
 .logo-text {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  letter-spacing: -0.02em;
 }
 
 .footer-description {
   color: var(--color-text-secondary);
   max-width: 300px;
+  line-height: 1.7;
 }
 
 .footer-links {
@@ -125,9 +135,10 @@ const currentYear = new Date().getFullYear()
 }
 
 .footer-section h4 {
-  font-size: 0.875rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--color-text);
   margin-bottom: var(--spacing-xs);
 }
@@ -138,11 +149,13 @@ const currentYear = new Date().getFullYear()
   gap: 0.5rem;
   color: var(--color-text-secondary);
   font-size: 0.875rem;
-  transition: color 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.15rem 0;
 }
 
 .footer-section a:hover {
   color: var(--color-primary);
+  transform: translateX(4px);
 }
 
 .footer-bottom a {
@@ -166,10 +179,24 @@ const currentYear = new Date().getFullYear()
   color: var(--color-text-secondary);
 }
 
+.footer-bottom-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
 @media (min-width: 768px) {
   .footer-bottom {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-bottom {
+    text-align: left;
+    align-items: flex-start;
   }
 }
 </style>

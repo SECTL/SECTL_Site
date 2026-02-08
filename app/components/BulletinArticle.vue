@@ -58,6 +58,10 @@ const { title, date, description, backTo } = toRefs(props)
   margin-bottom: var(--spacing-xl);
 }
 
+.bulletin-header h1 {
+  letter-spacing: -0.03em;
+}
+
 .bulletin-back {
   display: flex;
   justify-content: center;
@@ -83,12 +87,17 @@ const { title, date, description, backTo } = toRefs(props)
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--color-bg-secondary);
+  border-radius: 9999px;
+  font-size: 0.85rem;
 }
 
 .bulletin-content :deep(h2) {
   margin-top: var(--spacing-sm);
   margin-bottom: var(--spacing-sm);
   font-size: 1.5rem;
+  letter-spacing: -0.02em;
 }
 
 .bulletin-content :deep(h3) {
@@ -101,6 +110,11 @@ const { title, date, description, backTo } = toRefs(props)
   color: var(--color-text-secondary);
   line-height: 1.8;
   margin-bottom: 0.4rem;
+}
+
+.bulletin-content {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .bulletin-content :deep(ul),
@@ -116,6 +130,9 @@ const { title, date, description, backTo } = toRefs(props)
 
 .bulletin-content :deep(a) {
   color: var(--color-primary);
+  transition: all 0.2s ease;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .bulletin-content :deep(a:hover) {

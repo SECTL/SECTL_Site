@@ -2,18 +2,19 @@
   --color-primary: #2495f7;
   --color-primary-dark: #1d7acc;
   --color-primary-light: #4daef8;
+  --color-primary-rgb: 36, 149, 247;
   
   --color-highlight: #fef3c7;
   --color-danger: #ef4444;
   
-  --color-bg: #ffffff;
-  --color-bg-secondary: #fafafa;
-  --color-bg-footer: #f9fafb;
-  --color-text: #171717;
-  --color-text-secondary: #737373;
-  --color-border: #e5e5e5;
+  --color-bg: #f8fafc;
+  --color-bg-secondary: #f1f5f9;
+  --color-bg-footer: #f1f5f9;
+  --color-text: #0f172a;
+  --color-text-secondary: #64748b;
+  --color-border: #e2e8f0;
   --color-card-bg: #ffffff;
-  --color-card-hover: #fafafa;
+  --color-card-hover: #ffffff;
   
   --max-width: 1440px;
   --header-height: 64px;
@@ -24,28 +25,48 @@
   --spacing-xl: 3rem;
   --spacing-2xl: 4rem;
   
-  --radius-sm: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
   
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.06), 0 1px 2px -1px rgb(0 0 0 / 0.06);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
+  --shadow-lg: 0 10px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.06);
+  --shadow-xl: 0 20px 40px -10px rgb(0 0 0 / 0.1), 0 8px 16px -8px rgb(0 0 0 / 0.06);
+  --shadow-glow: 0 0 20px rgba(var(--color-primary-rgb), 0.15);
 }
 
 .dark {
-  --color-bg: #000000;
-  --color-bg-secondary: #111827;
-  --color-bg-footer: #080808;
-  --color-text: #ededed;
-  --color-text-secondary: #a3a3a3;
-  --color-border: #262626;
-  --color-card-bg: #171717;
-  --color-card-hover: #1f1f1f;
+  --color-bg: #0f172a;
+  --color-bg-secondary: #1e293b;
+  --color-bg-footer: #0c1222;
+  --color-text: #e2e8f0;
+  --color-text-secondary: #94a3b8;
+  --color-border: #1e293b;
+  --color-card-bg: #1e293b;
+  --color-card-hover: #263348;
   
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.5);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.5);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.4);
+  --shadow-md: 0 4px 8px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+  --shadow-xl: 0 20px 40px -10px rgb(0 0 0 / 0.6), 0 8px 16px -8px rgb(0 0 0 / 0.4);
+  --shadow-glow: 0 0 30px rgba(var(--color-primary-rgb), 0.2);
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-secondary);
 }
 
 * {
@@ -59,7 +80,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -91,9 +112,10 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
   margin-bottom: var(--spacing-xs);
+  letter-spacing: -0.02em;
 }
 
 h1 {
@@ -127,7 +149,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
-  transition: all 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn {
@@ -139,24 +161,40 @@ button {
   font-weight: 500;
   background-color: var(--color-primary);
   color: white;
-  transition: all 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover {
   background-color: var(--color-primary-dark);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.3);
   color: white;
 }
 
+.btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
 .btn-ghost {
-  background-color: var(--color-bg-secondary);
+  background-color: var(--color-card-bg);
   color: var(--color-text);
   border: 1px solid var(--color-border);
 }
 
 .btn-ghost:hover {
   background-color: var(--color-bg-secondary);
+  border-color: var(--color-primary);
   color: var(--color-text);
+  box-shadow: none;
+}
+
+.dark .btn-ghost {
+  border-color: #334155;
+}
+
+.dark .btn-ghost:hover {
+  background-color: var(--color-card-hover);
+  border-color: var(--color-primary);
 }
 
 .btn-download:hover {
@@ -165,11 +203,31 @@ button {
 }
 
 .card {
+  position: relative;
   background-color: var(--color-card-bg);
-  border: 1.5px solid var(--color-border);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--spacing-lg);
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(var(--color-primary-rgb), 0.06) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: var(--radius-lg);
+  pointer-events: none;
+}
+
+.card:hover::before {
+  opacity: 1;
 }
 
 .card-static {
@@ -177,16 +235,22 @@ button {
   flex-direction: column;
   gap: var(--spacing-sm);
   background-color: var(--color-card-bg);
-  border: 1.5px solid var(--color-border);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   padding: var(--spacing-lg);
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover {
   background-color: var(--color-card-hover);
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-6px) scale(1.01);
+  border-color: rgba(var(--color-primary-rgb), 0.3);
+}
+
+.card-static:hover {
   box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
+  border-color: rgba(var(--color-primary-rgb), 0.2);
 }
 
 .grid {

@@ -75,11 +75,15 @@ const selectLocale = (code: string) => {
   border-radius: var(--radius-md);
   background-color: transparent;
   color: var(--color-text);
-  transition: background-color 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .lang-icon-btn:hover {
   background-color: var(--color-bg-secondary);
+}
+
+.lang-icon-btn:active {
+  transform: scale(0.9);
 }
 
 .lang-dropdown {
@@ -87,15 +91,16 @@ const selectLocale = (code: string) => {
   left: 0;
   top: 110%;
   min-width: 130px;
-  background: var(--color-bg);
-  border: 0.25px solid var(--color-border);
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-xl);
   z-index: 10;
   display: flex;
   flex-direction: column;
   padding: 0.35rem;
   gap: 0.35rem;
+  backdrop-filter: blur(12px);
 }
 
 .lang-option-wrap {
@@ -114,8 +119,8 @@ const selectLocale = (code: string) => {
   font-size: 0.95rem;
   color: var(--color-text-secondary);
   cursor: pointer;
-  border-radius: var(--radius-lg);
-  transition: background 0.2s, color 0.2s;
+  border-radius: var(--radius-md);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   align-items: center;
   gap: 0.5em;
@@ -125,13 +130,13 @@ const selectLocale = (code: string) => {
 
 .lang-option:hover {
   background: var(--color-bg-secondary);
-  color: var(--color-text);
+  color: var(--color-primary);
   border-radius: var(--radius-md);
 }
 
 .lang-option.active {
   color: var(--color-primary);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .lang-active-shadow {
@@ -172,16 +177,16 @@ const selectLocale = (code: string) => {
 }
 
 .scale-center-enter-active {
-  transition: all 0.2s ease-out;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: center center;
 }
 
 .scale-center-leave-active {
-  transition: opacity 0.1s ease-out;
+  transition: opacity 0.15s ease-out;
 }
 
 .scale-center-enter-from {
-  transform: scale(0.9);
+  transform: scale(0.92);
   opacity: 0;
   box-shadow: var(--shadow-sm);
 }
@@ -193,6 +198,6 @@ const selectLocale = (code: string) => {
 .scale-center-enter-to {
   transform: scale(1);
   opacity: 1;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-xl);
 }
 </style>
