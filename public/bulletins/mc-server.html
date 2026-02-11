@@ -32,14 +32,12 @@
     <h3>📑 目录</h3>
     <ul>
       <li><a href="#plugins">插件功能</a></li>
-      <li><a href="#cheating">作弊类规则</a></li>
-      <li><a href="#buildings">建筑与机器类规则</a></li>
-      <li><a href="#language">言语类规则</a></li>
-      <li><a href="#interaction">玩家相处类规则</a></li>
-      <li><a href="#admin">管理员守则</a></li>
-      <li><a href="#punishments">处罚规则</a></li>
-      <li><a href="#appeals">申诉与沟通</a></li>
-      <li><a href="#reporting">举报</a></li>
+      <li><a href="#chapter-1">第一章 总则</a></li>
+      <li><a href="#chapter-2">第二章 辅助功能与作弊判定</a></li>
+      <li><a href="#chapter-3">第三章 资产权属与建设规范</a></li>
+      <li><a href="#chapter-4">第四章 社区言论与社交规范</a></li>
+      <li><a href="#chapter-5">第五章 管理权限与程序</a></li>
+      <li><a href="#chapter-6">第六章 处罚与救济</a></li>
     </ul>
   </section>
 
@@ -56,6 +54,7 @@
         <li><a href="#veinminer">VeinMiner - 连锁挖掘</a></li>
         <li><a href="#imageframe">ImageFrame - 图片展示</a></li>
         <li><a href="#teleport">传送指令</a></li>
+        <li><a href="#coreprotect">CoreProtect - 玩家操作记录</a></li>
         <li><a href="#other-features">其他功能</a></li>
       </ul>
     </section>
@@ -86,7 +85,7 @@
     
     <h4 id="veinminer">VeinMiner - 连锁挖掘</h4>
     <ul>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/veinminer toggle</span> → 开关连锁挖掘功能</li>
+      <li>蹲下即可开关连锁挖掘功能</li>
       <li>只针对矿物和木头生效</li>
     </ul>
     
@@ -103,6 +102,12 @@
       <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tpaccept</span> → 接受传送请求</li>
       <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tpahere</span> → 请求某玩家传送到自己</li>
     </ul>
+
+    <h4 id="coreprotect">CoreProtect - 玩家操作记录</h4>
+    <ul>
+      <li>可以查看玩家在服务器上的所有操作记录，包括但不限于破坏、放置、交互等</li>
+      <li>如需查看记录，请使用指令 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/coreprotect info</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/co info</span>，仅可查询，不可回溯。</li>
+    </ul>
     
     <h4 id="other-features">其他功能</h4>
     <ul>
@@ -114,127 +119,95 @@
 
   <section>
     <h2>服务器准则</h2>
-    <p style="padding-left: 14px; border-left: 3px solid var(--color-primary);">请注意，该准则可能随时更改，以腐竹公布的版本为准。</p>
   </section>
 
-  <section id="cheating">
-    <h3>作弊类</h3>
+  <section id="chapter-1">
+    <h3>第一章 总则</h3>
     <ol>
-      <li><strong>服务器明确允许的辅助类功能</strong>：<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">矿透</span>、<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">ESP</span>、<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">实体高亮</span>、<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">全亮度</span>、<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">灵魂出窍</span>、<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">自动点击</span>（<span style="color: var(--color-danger); font-weight: bold;">不允许用于 PvP</span>）、<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">自动钓鱼</span>、<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">透视</span>、<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">投影打印机</span>、<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">音符盒音乐演奏</span>。除此之外的作弊功能均不得使用。</li>
-      <li>若您明知其他玩家使用了不允许的作弊功能却利用其优势，将视为使用违规作弊功能处理。</li>
+      <li><strong>第一条</strong> 为维护 SECTLCraft 服务器（以下简称"本服"）的游戏秩序，保障玩家合法权益，营造和谐、有序的游玩环境，特制定本条例。</li>
+      <li><strong>第二条</strong> 凡进入本服游玩的玩家，均视为已充分阅读、理解并自愿接受本条例之约束。本条例效力涵盖游戏内、官方交流群及相关社区平台。</li>
+      <li><strong>第三条</strong> 玩家应当遵守诚实信用原则。任何以"未认真阅读相关规定"为由请求减免处罚的，不予支持，并视情节予以从重处罚。</li>
     </ol>
   </section>
 
-  <section id="buildings">
-    <h3>建筑与机器类</h3>
+  <section id="chapter-2">
+    <h3>第二章 辅助功能与作弊判定</h3>
     <ol>
-      <li>建议为自己建造的任何建筑物、机器或存有自己物资的容器用告示牌在明显位置标明属权，防止产生纠纷。您也可以使用 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">Bolt</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">WorldGuard</span> 来保护自己的容器、建筑、机器不受他人侵害。</li>
-      <li>更改或拆除他人建筑、拿取他人物品、开动或停止他人机器前需要经过其主人同意，自然生成的结构不受限制。</li>
-    </ol>
-
-    <p><strong>如何确定建筑或机器的主人？</strong></p>
-    <ul>
-      <li>优先按照属权标识、<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">Bolt</span> 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">WorldGuard</span> 提供的信息确定属权</li>
-      <li>如果没有以上信息，则需要管理员使用 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">CoreProtect</span> 进行鉴权，7 天内最早摆下它（或它的一部分）的玩家视为其主人</li>
-      <li>若以上方法仍然无法确定其主人，则视为无主，可以随意处置</li>
-    </ul>
-
-    <ol>
-      <li>机器使用完毕后务必关闭。</li>
-      <li>不允许建造会导致服务器性能问题（导致 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">MSPT</span> &gt; 60 或 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">TPS</span> &lt; 10）的机器（利用超过 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">3 个假人</span>的牲电科技也不行）。</li>
-    </ol>
-
-    <p><strong>比如说？</strong>（包括但不限于下列这些）</p>
-    <ul>
-      <li>二叉树型全糖 2048 熔炉组：<a href="https://www.bilibili.com/video/BV1bA7Kz4EYV" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1bA7Kz4EYV</a></li>
-      <li>超过 3x3 的草羊机矩阵：<a href="https://www.bilibili.com/video/BV1YN83zCEb3" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1YN83zCEb3</a></li>
-      <li>假人徒手空置域：<a href="https://www.bilibili.com/video/BV1cg8yzJEAn" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1cg8yzJEAn</a></li>
-      <li>带熔炉组功能的禁人塔：<a href="https://www.bilibili.com/video/BV17YWPzSEAB" target="_blank" rel="noopener">https://www.bilibili.com/video/BV17YWPzSEAB</a></li>
-    </ul>
-
-    <ol>
-      <li>不允许建造可能导致他人卡顿（<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">FPS</span> 降低超过原 FPS 的 1/2）的建筑或机器。</li>
-    </ol>
-
-    <p>管理层在能按照上述方法确定属权的情况下，拆除时会尝试与您协商，也会在管理层投票决定，总而言之不会轻易拆除。</p>
-    <p>如果我们无法确定属权，则会在管理层投票通过后直接拆除，还请注意。</p>
-  </section>
-
-  <section id="language">
-    <h3>言语类</h3>
-    <p><strong>注意！</strong>此处的规则同时适用于游戏内聊天和 QQ 群聊天。</p>
-    <ol>
-      <li>不允许发表任何违法言论（包括但不限于黄赌毒、键政等），<span style="color: var(--color-danger); font-weight: bold;">违反此条导致的处罚不可申诉</span>。</li>
-      <li>不允许发表人身攻击、歧视或引战言论。</li>
-      <li>如果有超过两人在群内或游戏内争吵且情节严重，参与争吵者<strong>无论谁对谁错都同样处罚</strong>。</li>
-      <li>不允许发表可能导致他人恶心或反感的言论或内容。</li>
+      <li><strong>第四条</strong> 服务器准予玩家使用下列辅助类功能：
+        <ul>
+          <li>矿物透视、实体高亮（ESP）、全亮度调节；</li>
+          <li>自由相机（灵魂出窍）、自动钓鱼、投影打印；</li>
+          <li>自动音符盒音乐演奏、自动点击（严禁用于 PvP 环境）。</li>
+        </ul>
+      </li>
+      <li><strong>第五条</strong> 除本条例第四条明文列举的功能外，其余具有破坏平衡性质的功能均在禁止之列。若玩家对特定功能之合规性存疑，应当先行向管理层申报咨询。</li>
+      <li><strong>第六条</strong> 玩家明知他人实施违规作弊行为而利用其优势获利的，视为共同违规，按作弊行为追究责任。</li>
+      <li><strong>第七条</strong> 管理人员使用创造模式仅限于公共工程建设及生物生成。严禁利用职权产出物资赠予他人。</li>
     </ol>
   </section>
 
-  <section id="interaction">
-    <h3>玩家相处类</h3>
+  <section id="chapter-3">
+    <h3>第三章 资产权属与建设规范</h3>
     <ol>
-      <li>只有在对方明确同意的情况下才能对玩家进行 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">PvP</span>。</li>
-      <li>如果有人损害了您的合法权益，请向管理员举报，而不是恶意报复或以牙还牙。我们不会为您在报复过程中产生的违规行为减轻处罚。</li>
+      <li><strong>第八条</strong> 玩家对其建设的建筑、机器及存放物资的容器享有所有权。建议玩家在显著位置设置权属标识牌，或通过 Bolt、WorldGuard 进行技术锁定。</li>
+      <li><strong>第九条</strong> 严禁未经所有权人许可，擅自拆除、修改他人建筑，或启停他人机器、挪用他人物资。自然生成的场景结构不适用本条规定。</li>
+      <li><strong>第十条</strong> 资产权属的鉴定遵循下列顺位：
+        <ul>
+          <li>优先以标识牌或其他明显登记之信息为准；</li>
+          <li>若无上述信息，由管理人员调用 CoreProtect 记录鉴定。以 7 日内首位放置该方块（或核心组件）之玩家为所有人；</li>
+          <li>若经上述手段仍无法核实，则视为无主资产，管理层有权依照相关程序处置。</li>
+        </ul>
+      </li>
+      <li><strong>第十一条</strong> 机器设备运行完毕后，操作人应当即时关闭。严禁建造危害服务器运行效能的设施。凡导致 MSPT > 60 或 TPS < 10 的机器，或利用超过 3 个假人载体的设施，均属违规。</li>
+      <li><strong>第十二条</strong> 严禁建造导致他人客户端视觉卡顿的设施。凡导致他人 FPS 降幅超过 50% 的，管理层有权要求整改。</li>
     </ol>
   </section>
 
-  <section id="admin">
-    <h3>管理员守则</h3>
-    <p>我们相信您已经了解了管理的注意事项。总结起来有以下三点：</p>
-    <ul>
-      <li>#1) 尊重他人的隐私。</li>
-      <li>#2) 执行任何指令前，先考虑后果和风险。</li>
-      <li>#3) 权力越大，责任越大。</li>
-    </ul>
-
+  <section id="chapter-4">
+    <h3>第四章 社区言论与社交规范</h3>
     <ol>
-      <li>管理员应当以服务玩家为宗旨，维护服务器秩序，保障玩家权益。</li>
-      <li>管理员不得滥用管理权限。滥用管理权限的行为包括：</li>
-    </ol>
-    <ul>
-      <li>利用管理员权限包庇或帮助违规行为</li>
-      <li>利用管理员身份对玩家敲诈勒索</li>
-      <li>在不经投票的情况下随意处罚玩家、拆除或更改他人建筑</li>
-      <li>对玩家进行人身攻击、歧视或恶意嘲讽</li>
-    </ul>
-
-    <ol>
-      <li>任何决策都需要由全体管理员投票确定，确保决策的公平性和透明度。</li>
-      <li>封禁、禁言、提前解封玩家、同意申诉、回滚小型修改需要至少 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">1/2</span> 的管理员同意。</li>
-      <li>拆除或更改他人建筑、设施、回滚大型修改需要至少 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">2/3</span> 管理员同意。</li>
-      <li>回档或其他特大型操作需要至少 <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">2/3</span> 管理员同意，并由腐竹许可或执行。</li>
-      <li>腐竹始终对管理员的决定拥有一票肯定或否决权。</li>
+      <li><strong>第十三条</strong> 严禁利用本服相关社群发布下列违法违规信息：
+        <ul>
+          <li>涉及淫秽色情、赌博、毒品贩卖与交流等内容；</li>
+          <li>涉及极端政治、意识形态对立等敏感言论。</li>
+        </ul>
+        违反本条之处罚结果，不予申诉。
+      </li>
+      <li><strong>第十四条</strong> 严禁实施人身攻击、歧视或恶意引战行为。针对多人参与的争吵，管理层有权对全体参与者予以同等处罚。</li>
+      <li><strong>第十五条</strong> 严禁因观点差异（如对动画评价、角色喜好等之争执）引发群体性互喷。</li>
+      <li><strong>第十六条</strong> 严禁实施"开盒"等侵犯他人隐私之行为，包括但不限于推算他人真实姓名、传播未经授权的影像资料。</li>
+      <li><strong>第十七条</strong> 玩家间 PvP 行为应当建立在双方明确同意的基础之上。严禁以恶意报复为目的损害他人权益，报复行为中的违规部分将作为加重处罚情节。</li>
     </ol>
   </section>
 
-  <section id="punishments">
-    <h3>处罚规则</h3>
-    <p>若您违反了上方的规则，可能会受到以下处罚：</p>
-    <ul>
-      <li>警告并要求停止违规行为（拆除违规机器 / 卸载违规插件 / 关闭违规功能等等）</li>
-      <li>暂时 / 永久撤销创造 / 管理员权限（管理员暂时被撤销权限时仍然处于管理团队中，但是撤销权限期间无法在任何地方使用管理员权力；永久撤销则视为逐出管理团队，并且不得重新申请）</li>
-      <li>封禁 1 天 / 3 天 / 7 天 / 1 个月 / 1 年</li>
-      <li><span style="color: var(--color-danger); font-weight: bold;">永久封禁</span></li>
-    </ul>
+  <section id="chapter-5">
+    <h3>第五章 管理权限与程序</h3>
+    <ol>
+      <li><strong>第十八条</strong> 管理人员行使职权应当遵循尊重隐私、预估风险及权责对等原则，以服务玩家为宗旨，严禁滥用职权、收受私利。</li>
+      <li><strong>第十九条</strong> 管理决策实行管理层集体表决制度：
+        <ul>
+          <li>封禁、禁言、申诉审批、小型回滚操作，需经 1/2 以上管理人员赞成；</li>
+          <li>强制拆除资产、大型回滚操作，需经 2/3 以上管理人员赞成；</li>
+          <li>全服回档或特大型运行操作，需经 2/3 以上管理人员赞成，并报请服主批准。</li>
+        </ul>
+      </li>
+      <li><strong>第二十条</strong> 服主对管理层的所有集体决议保留最终裁定权及否决权。</li>
+    </ol>
   </section>
 
-  <section id="appeals">
-    <h3>🙋 申诉与沟通</h3>
-    <p><strong>"腐竹信我，我真的是冤枉的 / 我觉得处罚太重了"</strong></p>
-    <p>这种情况下您可以：</p>
-    <ul>
-      <li>（腐竹在线时）私聊腐竹</li>
-      <li>（腐竹不在线时）联系管理员</li>
-    </ul>
-  </section>
-
-  <section id="reporting">
-    <h3>🚨 举报</h3>
-    <p><strong>"我抓到了违反规则的人！我该如何举报？"</strong></p>
-    <p>请保存好证据（录屏、截图、<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">CoreProtect</span> 记录，或者任何真实可信且可能帮助管理确定其行为的证据），然后通过上方的方式联系到管理员 / 腐竹即可。</p>
-    <p>请放心，我们会对举报人的信息严格保密，无需担心违规报复。</p>
-    <p>请注意：多次恶意举报可能会导致您被取消举报资格。</p>
+  <section id="chapter-6">
+    <h3>第六章 处罚与救济</h3>
+    <ol>
+      <li><strong>第二十一条</strong> 违反本条例者，管理层有权视情节采取警告、撤销管理权限、阶梯式封禁或永久清退等处置措施。</li>
+      <li><strong>第二十二条</strong> 玩家对处罚决定存有异议的，可通过本服规定的官方渠道发起申诉。</li>
+      <li><strong>第二十三条</strong> 举报制度：
+        <ul>
+          <li>举报人应当提供真实有效的证据材料；</li>
+          <li>管理层对举报人身份实行严格保密机制；</li>
+          <li>严禁多次恶意举报，违者取消举报资格并追究责任。</li>
+        </ul>
+      </li>
+    </ol>
   </section>
 </div>
 
@@ -281,6 +254,7 @@
         <li><a href="#veinminer-en">VeinMiner - Multi-Harvest</a></li>
         <li><a href="#imageframe-en">ImageFrame - Image Display</a></li>
         <li><a href="#teleport-en">Teleportation Commands</a></li>
+        <li><a href="#coreprotect-en">CoreProtect - Player Action Logs</a></li>
         <li><a href="#other-features-en">Other Features</a></li>
       </ul>
     </section>
@@ -311,7 +285,7 @@
     
     <h4 id="veinminer-en">VeinMiner - Multi-Harvest</h4>
     <ul>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/veinminer toggle</span> → Toggle multi-harvest function</li>
+      <li>Sneak to toggle multi-harvest function</li>
       <li>Only works on ores and wood</li>
     </ul>
     
@@ -329,6 +303,12 @@
       <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tpahere</span> → Request a player to teleport to you</li>
     </ul>
     
+    <h4 id="coreprotect-en">CoreProtect - Player Action Logs</h4>
+    <ul>
+      <li>Can view all player action records on the server, including but not limited to breaking, placing, interacting, etc.</li>
+      <li>To view records, use command <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/coreprotect info</span> or <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/co info</span>. Query only, no rollback.</li>
+    </ul>
+    
     <h4 id="other-features-en">Other Features</h4>
     <ul>
       <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">/tellraw</span> → Send a private message without showing the sender's name</li>
@@ -340,15 +320,12 @@
   <section id="rules-toc-en">
     <h3>📑 Table of Contents</h3>
     <ul>
-      <li><a href="#plugins-en">Plugins</a></li>
-      <li><a href="#cheating-en">Cheating Rules</a></li>
-      <li><a href="#buildings-en">Buildings &amp; Machines</a></li>
-      <li><a href="#language-en">Chat &amp; Language</a></li>
-      <li><a href="#interaction-en">Player Interaction</a></li>
-      <li><a href="#admin-en">Admin Code</a></li>
-      <li><a href="#punishments-en">Punishments</a></li>
-      <li><a href="#appeals-en">Appeals</a></li>
-      <li><a href="#reporting-en">Reporting</a></li>
+      <li><a href="#chapter-1-en">Chapter 1: General Provisions</a></li>
+      <li><a href="#chapter-2-en">Chapter 2: Auxiliary Features and Cheating Determination</a></li>
+      <li><a href="#chapter-3-en">Chapter 3: Property Ownership and Construction Standards</a></li>
+      <li><a href="#chapter-4-en">Chapter 4: Community Speech and Social Norms</a></li>
+      <li><a href="#chapter-5-en">Chapter 5: Management Authority and Procedures</a></li>
+      <li><a href="#chapter-6-en">Chapter 6: Punishments and Remedies</a></li>
     </ul>
   </section>
 
@@ -357,123 +334,92 @@
     <p style="padding-left: 14px; border-left: 3px solid var(--color-primary);">These rules may change at any time. The server owner's latest published version shall prevail.</p>
   </section>
 
-  <section id="cheating-en">
-    <h3>Cheating</h3>
+  <section id="chapter-1-en">
+    <h3>Chapter 1: General Provisions</h3>
     <ol>
-      <li><strong>Explicitly allowed assisting features</strong>: <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">X-Ray</span>, <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">ESP</span>, <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">entity highlighting</span>, <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">full brightness</span>, <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">freecam</span>, <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">auto-click</span> (<span style="color: var(--color-danger); font-weight: bold;">not allowed for PvP</span>), <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">auto-fishing</span>, <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">projection</span>, <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">printer</span>, and <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">note block music performance</span>. Any other cheating features are not allowed.</li>
-      <li>If you knowingly benefit from another player using disallowed cheats, it will be treated as using disallowed cheats.</li>
+      <li><strong>Article 1</strong> These regulations are formulated to maintain the game order of SECTLCraft server (hereinafter referred to as "this server"), safeguard the legitimate rights and interests of players, and create a harmonious and orderly gaming environment.</li>
+      <li><strong>Article 2</strong> All players who enter this server for gaming are deemed to have fully read, understood, and voluntarily accepted the constraints of these regulations. The effectiveness of these regulations covers in-game, official communication groups, and related community platforms.</li>
+      <li><strong>Article 3</strong> Players shall abide by the principle of good faith. Any request for reduction or exemption of punishment on the grounds of "not carefully reading relevant regulations" will not be supported, and may be subject to aggravated punishment depending on the circumstances.</li>
     </ol>
   </section>
 
-  <section id="buildings-en">
-    <h3>Buildings &amp; Machines</h3>
+  <section id="chapter-2-en">
+    <h3>Chapter 2: Auxiliary Features and Cheating Determination</h3>
     <ol>
-      <li>It is recommended to label ownership for any building, machine, or container storing your items using a sign in a visible place to avoid disputes. You may use <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">Bolt</span> or <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">WorldGuard</span> to protect containers, buildings, and machines from others.</li>
-      <li>Before modifying or dismantling someone's building, taking their items, or starting or stopping their machines, you must get owner's permission. Naturally generated structures are not restricted.</li>
-    </ol>
-
-    <p><strong>How do we determine ownership?</strong></p>
-    <ul>
-      <li>Prefer ownership signs, <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">Bolt</span>, or <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">WorldGuard</span> data</li>
-      <li>If none exists, admins may use <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">CoreProtect</span>. The earliest placer within last 7 days (of it or part of it) is considered owner</li>
-      <li>If ownership still cannot be determined, it is treated as ownerless and may be handled freely</li>
-    </ul>
-
-    <ol>
-      <li>Always turn off machines after use.</li>
-      <li>Do not build machines that cause performance issues (<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">MSPT</span> &gt; 60 or <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">TPS</span> &lt; 10). "Tech" that uses more than <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">3 fake players</span> is also not allowed.</li>
-    </ol>
-
-    <p><strong>Examples</strong> (including but not limited to):</p>
-    <ul>
-      <li>Binary-tree 2048 furnace array: <a href="https://www.bilibili.com/video/BV1bA7Kz4EYV" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1bA7Kz4EYV</a></li>
-      <li>Grass-sheep machine matrix larger than 3x3: <a href="https://www.bilibili.com/video/BV1YN83zCEb3" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1YN83zCEb3</a></li>
-      <li>Idle bare-handed fake-player area: <a href="https://www.bilibili.com/video/BV1cg8yzJEAn" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1cg8yzJEAn</a></li>
-      <li>No-player tower with furnace array: <a href="https://www.bilibili.com/video/BV17YWPzSEAB" target="_blank" rel="noopener">https://www.bilibili.com/video/BV17YWPzSEAB</a></li>
-    </ul>
-
-    <ol>
-      <li>Do not build anything that causes client lag for others (<span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">FPS</span> drops by more than half of their original FPS).</li>
-    </ol>
-
-    <p>If ownership can be determined, team will try to negotiate with you and vote before dismantling; it won't be done lightly.</p>
-    <p>If ownership cannot be determined, team may dismantle it directly after a successful admin vote.</p>
-  </section>
-
-  <section id="language-en">
-    <h3>Chat &amp; Language</h3>
-    <p><strong>Note:</strong> These rules apply to both in-game chat and the QQ group chat.</p>
-    <ol>
-      <li>No illegal speech (including but not limited to pornography, gambling, drugs, political provocation, etc.). <span style="color: var(--color-danger); font-weight: bold;">Punishments for this rule cannot be appealed.</span></li>
-      <li>No personal attacks, discrimination, or flame wars.</li>
-      <li>If more than two people engage in a serious argument in chat, all participants will be punished regardless of who is "right".</li>
-      <li>No content that is likely to disgust or offend others.</li>
+      <li><strong>Article 4</strong> The server allows players to use the following auxiliary features:
+        <ul>
+          <li>Ore X-ray, entity highlighting (ESP), full brightness adjustment;</li>
+          <li>Freecam (soul out-of-body), auto-fishing, projection printing;</li>
+          <li>Automatic note block music performance, auto-click (strictly prohibited in PvP environments).</li>
+        </ul>
+      </li>
+      <li><strong>Article 5</strong> Except for the features explicitly listed in Article 4 of these regulations, all other features that disrupt game balance are prohibited. If players have doubts about the compliance of specific features, they should first consult the management team.</li>
+      <li><strong>Article 6</strong> Players who knowingly benefit from others' violation of cheating rules by exploiting their advantages will be regarded as joint violators and held accountable for cheating behavior.</li>
+      <li><strong>Article 7</strong> Management personnel's use of creative mode is limited to public engineering construction and mob spawning. It is strictly prohibited to use authority to produce materials and give them to others.</li>
     </ol>
   </section>
 
-  <section id="interaction-en">
-    <h3>Player Interaction</h3>
+  <section id="chapter-3-en">
+    <h3>Chapter 3: Property Ownership and Construction Standards</h3>
     <ol>
-      <li><span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">PvP</span> is only allowed with explicit consent from the other player.</li>
-      <li>If your legitimate rights are harmed, report to admins instead of retaliating. We will not reduce punishment for violations committed during retaliation.</li>
+      <li><strong>Article 8</strong> Players have ownership over buildings, machines, and containers storing materials they have built. It is recommended that players set up ownership signs in prominent locations, or use Bolt or WorldGuard for technical locking.</li>
+      <li><strong>Article 9</strong> It is strictly prohibited to dismantle or modify others' buildings, or start or stop others' machines, or use others' materials without the permission of the owner. Naturally generated scene structures are not subject to this provision.</li>
+      <li><strong>Article 10</strong> The determination of property ownership follows the following priority:
+        <ul>
+          <li>Priority is given to information on signs or other obvious registrations;</li>
+          <li>If there is no such information, management personnel shall verify using CoreProtect records. The player who first placed the block (or core component) within 7 days is considered the owner;</li>
+          <li>If ownership still cannot be verified through the above means, it is considered ownerless property, and the management team has the right to dispose of it according to relevant procedures.</li>
+        </ul>
+      </li>
+      <li><strong>Article 11</strong> After machine equipment operation is completed, the operator shall promptly turn it off. It is strictly prohibited to build facilities that harm server performance. Any machine that causes MSPT > 60 or TPS < 10, or facilities that use more than 3 fake player entities, are considered violations.</li>
+      <li><strong>Article 12</strong> It is strictly prohibited to build facilities that cause visual lag for other clients. Any facility that causes others' FPS to drop by more than 50% may be subject to rectification requirements by the management team.</li>
     </ol>
   </section>
 
-  <section id="admin-en">
-    <h3>Admin Code</h3>
-    <p>We assume you have learned the basics from existing admins. In summary:</p>
-    <ul>
-      <li>#1) Respect others' privacy.</li>
-      <li>#2) Consider consequences and risks before executing any command.</li>
-      <li>#3) With great power comes great responsibility.</li>
-    </ul>
-
+  <section id="chapter-4-en">
+    <h3>Chapter 4: Community Speech and Social Norms</h3>
     <ol>
-      <li>Admins should serve players with dedication, maintain server order, and protect player rights.</li>
-      <li>Admins must not abuse their powers. Abuse includes:</li>
-    </ol>
-    <ul>
-      <li>Covering up or assisting rule-breaking</li>
-      <li>Extortion using admin status</li>
-      <li>Issuing punishments or dismantling or modifying builds without a vote</li>
-      <li>Personal attacks, discrimination, or malicious mockery against players</li>
-    </ul>
-
-    <ol>
-      <li>All decisions require a vote by all admins to ensure fairness and transparency.</li>
-      <li>Bans, mutes, early unbans, appeal approval, or small rollbacks require at least <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">1/2</span> of admins.</li>
-      <li>Dismantling or modifying others' builds or facilities, building large projects, or large rollbacks require at least <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">2/3</span> of admins.</li>
-      <li>Rollbacks and other very large operations require at least <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">2/3</span> of admins and must be approved or executed by the owner.</li>
-      <li>The owner always has a final approve or veto vote on admin decisions.</li>
+      <li><strong>Article 13</strong> It is strictly prohibited to use this server's related communities to publish the following illegal and prohibited information:
+        <ul>
+          <li>Content involving pornography, obscenity, gambling, drug trafficking and exchange, etc.;</li>
+          <li>Sensitive remarks involving extreme politics and ideological opposition.</li>
+        </ul>
+        Punishment results for violating this article cannot be appealed.
+      </li>
+      <li><strong>Article 14</strong> It is strictly prohibited to engage in personal attacks, discrimination, or malicious provocation. For disputes involving multiple participants, the management team has the right to impose equal punishment on all participants.</li>
+      <li><strong>Article 15</strong> It is strictly prohibited to trigger group mutual attacks due to differences in opinions (such as disputes over anime evaluations, character preferences, etc.).</li>
+      <li><strong>Article 16</strong> It is strictly prohibited to engage in behaviors that infringe on others' privacy, such as "doxing," including but not limited to deducing others' real names, spreading unauthorized image materials.</li>
+      <li><strong>Article 17</strong> PvP behavior between players should be based on explicit mutual consent. It is strictly prohibited to harm others' rights and interests for the purpose of malicious retaliation. Violations committed during retaliation will be considered as aggravating circumstances for punishment.</li>
     </ol>
   </section>
 
-  <section id="punishments-en">
-    <h3>Punishments</h3>
-    <p>If you violate any rule above, you may receive one or more of the following penalties:</p>
-    <ul>
-      <li>Warning and request to stop the violation (remove illegal machines / uninstall illegal plugins / disable illegal features, etc.)</li>
-      <li>Temporary or permanent removal of Creative / Admin permissions (temporary removal keeps you in the admin team but you cannot use admin powers anywhere; permanent removal means removal from the admin team and you may not re-apply)</li>
-      <li>Ban for 1 day / 3 days / 7 days / 1 month / 1 year</li>
-      <li><span style="color: var(--color-danger); font-weight: bold;">Permanent ban</span></li>
-    </ul>
+  <section id="chapter-5-en">
+    <h3>Chapter 5: Management Authority and Procedures</h3>
+    <ol>
+      <li><strong>Article 18</strong> Management personnel exercising authority shall follow the principles of respecting privacy, assessing risks, and balancing rights and responsibilities, with serving players as the purpose. Abuse of power and acceptance of private benefits are strictly prohibited.</li>
+      <li><strong>Article 19</strong> Management decisions implement a collective voting system by the management team:
+        <ul>
+          <li>Bans, mutes, appeal approvals, and small rollback operations require approval from more than 1/2 of management personnel;</li>
+          <li>Forced demolition of assets and large rollback operations require approval from more than 2/3 of management personnel;</li>
+          <li>Server-wide rollbacks or extra-large operational activities require approval from more than 2/3 of management personnel and must be reported to the server owner for approval.</li>
+        </ul>
+      </li>
+      <li><strong>Article 20</strong> The server owner reserves the final decision-making and veto power over all collective resolutions of the management team.</li>
+    </ol>
   </section>
 
-  <section id="appeals-en">
-    <h3>🙋 Appeals</h3>
-    <p><strong>"Owner, I'm innocent / I think the punishment is too heavy."</strong></p>
-    <p>In this case you can:</p>
-    <ul>
-      <li>(When the owner is online) DM the owner</li>
-      <li>(When the owner is offline) Contact an administrator</li>
-    </ul>
-  </section>
-
-  <section id="reporting-en">
-    <h3>🚨 Reporting</h3>
-    <p><strong>"I caught someone breaking the rules. How do I report?"</strong></p>
-    <p>Keep evidence (recording, screenshots, <span style="background-color: var(--color-highlight); padding: 2px 4px; border-radius: 3px;">CoreProtect</span> logs, or any credible evidence that helps admins confirm the behavior), then contact an admin/owner using the methods above.</p>
-    <p>Reporter information is kept strictly confidential. No need to worry about retaliation.</p>
-    <p>Repeated malicious reporting may cause you to lose reporting privileges.</p>
+  <section id="chapter-6-en">
+    <h3>Chapter 6: Punishments and Remedies</h3>
+    <ol>
+      <li><strong>Article 21</strong> Those who violate these regulations may be subject to disciplinary measures such as warnings, revocation of management permissions, tiered bans, or permanent removal, depending on the circumstances.</li>
+      <li><strong>Article 22</strong> Players who have objections to punishment decisions may initiate appeals through the official channels specified by this server.</li>
+      <li><strong>Article 23</strong> Reporting system:
+        <ul>
+          <li>Reporters shall provide true and valid evidence materials;</li>
+          <li>The management team implements a strict confidentiality mechanism for reporter identities;</li>
+          <li>Repeated malicious reporting is prohibited, and violators will lose reporting privileges and be held accountable.</li>
+        </ul>
+      </li>
+    </ol>
   </section>
 </div>
