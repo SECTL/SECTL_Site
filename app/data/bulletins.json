@@ -37,5 +37,18 @@
       "title": "Common Resources",
       "description": "SECTL organization project repository and GitHub file acceleration service."
     }
+  },
+  {
+    "slug": "recent-controversy",
+    "date": "2026-02-11",
+    "contentPath": "/bulletins/recent-controversy.html",
+    "zh": {
+      "title": "关于近期智教联盟论坛的一篇帖子及SECTL管理公告争议的情况说明",
+      "description": "以下是近期争议的相关页面截图。"
+    },
+    "en": {
+      "title": "Controversy About a Recent Post on the ZTEU Forum and the SECTL Management Announcement",
+      "description": "Screenshots of recent controversy pages."
+    }
   }
 ]
