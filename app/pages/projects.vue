@@ -76,7 +76,7 @@
         <img 
           :key="colorMode.value"
           alt="Star History Chart" 
-          :src="`https://api.star-history.com/svg?repos=SECTL/SecRandom,SECTL/SecScore,SECTL/Kazuha&type=date${colorMode.value
+          :src="`https://api.star-history.com/svg?repos=SECTL/SecRandom,SECTL/SecScore,SECTL/Kazuha,SECTL/Homeworklsland&type=date${colorMode.value
           === 'dark' ? '&theme=dark' : ''}&legend=top-left`" 
         />
       </div>
@@ -230,6 +230,21 @@ const projects = ref<Project[]>([
         icon: 'devicon:windows11',
         options: [
           { key: 'windows-portable', label: 'projects.download.Portable' }
+        ]
+      }
+    ]
+  },
+  {
+    name: 'Homeworklsland',
+    icon: '/icons/Homeworklsland.png',
+    github: 'https://github.com/SECTL/Homeworklsland',
+    docs: 'https://homeworklsland.sectl.top',
+    descriptionKey: 'projects.Homeworklsland.description',
+    downloadPlatforms: [
+      {
+        platform: 'Windows',
+        icon: 'devicon:windows11',
+        options: [
         ]
       }
     ]
@@ -564,6 +579,7 @@ useSeoMeta({
   padding: 8px 16px;
   margin-left: 30px;
   color: var(--color-text-secondary);
+  white-space: nowrap;
 }
 
 .download-menu-item Icon {

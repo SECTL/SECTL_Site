@@ -6,7 +6,7 @@
       </div>
 
       <div class="grid grid-3">
-        <div v-for="member in currentMembers" :key="member.name" class="card member-card">
+        <div v-for="member in currentMembers" :key="member.name" class="card-static member-card">
           <img :src="`https://github.com/${member.githubName}.png`" :alt="member.name" class="member-avatar" />
           <div class="member-info">
             <h3>{{ member.name }}</h3>
@@ -39,20 +39,27 @@ interface Member {
 const chineseMembers: Member[] = [
   {
     name: '黎泽懿',
-    role: '组织创始人、SecRandom开发者',
+    role: '组织创始人、SecRandom 开发者',
     githubName: 'lzy98276',
     email: 'lzy.12@foxmail.com'
   },
   {
     name: '藏狐',
-    role: 'SecScore开发者',
+    role: 'SecScore 开发者',
     githubName: 'Fox-block-offcial',
     email: 'system_linux_cmb@163.com'
   },
   {
     name: 'Daniel Haraguchi',
-    role: 'kazuha项目开发者',
-    githubName: 'Haraguse'
+    role: 'kazuha 开发者',
+    githubName: 'Haraguse',
+    email: 'chihuyou90@gmail.com'
+  },
+  {
+    name: 'Chenghao_lee',
+    role: 'Homeworklsland 开发者',
+    githubName: 'chenghaolee-2012',
+    email: '2215127992@qq.com'
   },
   {
     name: '叶背影',
@@ -74,7 +81,7 @@ const chineseMembers: Member[] = [
   },
   {
     name: 'Jursin',
-    role: '贡献者',
+    role: '文档、网站开发',
     githubName: 'Jursin',
     email: 'jursin@126.com'
   }
@@ -94,6 +101,10 @@ const englishMembers: Member[] = [
     role: 'Kazuha Developer'
   },
   {
+    name: 'Chenghao_lee',
+    role: 'Homeworklsland Developer'
+  },
+  {
     name: 'LeafS',
     role: 'Contributor'
   },
@@ -107,7 +118,7 @@ const englishMembers: Member[] = [
   },
   {
     name: 'Jursin',
-    role: 'Contributor'
+    role: 'Documentation & Website Developer'
   }
 ]
 
@@ -201,7 +212,6 @@ useSeoMeta({
 .member-links {
   display: flex;
   gap: var(--spacing-sm);
-  margin-top: var(--spacing-xs);
 }
 
 .member-links a {
