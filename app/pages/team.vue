@@ -55,6 +55,16 @@ const chineseMembers: Member[] = [
     githubName: 'Haraguse'
   },
   {
+    name: 'chenghaolee-2012',
+    role: 'Homeworklsland开发者',
+    githubName: 'chenghaolee-2012'
+  },
+  {
+    name: 'wwcrdrvf6u',
+    role: 'ShowWrite开发者',
+    githubName: 'wwcrdrvf6u'
+  },
+  {
     name: '叶背影',
     role: '贡献者',
     githubName: 'LeafS825',
@@ -92,6 +102,14 @@ const englishMembers: Member[] = [
   {
     name: 'Daniel Haraguchi',
     role: 'Kazuha Developer'
+  },
+  {
+    name: 'chenghaolee-2012',
+    role: 'Homeworklsland Developer'
+  },
+  {
+    name: 'wwcrdrvf6u',
+    role: 'ShowWrite Developer'
   },
   {
     name: 'LeafS',

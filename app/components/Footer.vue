@@ -19,6 +19,12 @@
             <a href="https://github.com/SECTL/Kazuha" target="_blank" rel="noopener">
               Kazuha
             </a>
+            <a href="https://github.com/SECTL/Homeworklsland" target="_blank" rel="noopener">
+              Homeworklsland
+            </a>
+            <a href="https://github.com/SECTL/ShowWrite" target="_blank" rel="noopener">
+              ShowWrite
+            </a>
             <h4 style="margin-top: 1em;">{{ t('footer.links.title') }}</h4>
             <a href="https://forum.smart-teach.cn/" target="_blank" rel="noopener">{{ t('footer.links.stcnForum') }}</a>
             <a href="https://github.com/awesome-iwb/awesome-iwb" target="_blank" rel="noopener">Awesome-Iwb</a>

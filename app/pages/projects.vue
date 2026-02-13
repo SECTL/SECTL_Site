@@ -233,6 +233,20 @@ const projects = ref<Project[]>([
         ]
       }
     ]
+  },
+  {
+    name: 'Homeworklsland',
+    icon: '/icons/Homeworklsland.png',
+    github: 'https://github.com/SECTL/Homeworklsland',
+    docs: 'https://homeworklsland.sectl.top',
+    descriptionKey: 'projects.Homeworklsland.description'
+  },
+  {
+    name: 'ShowWrite',
+    icon: '/icons/ShowWrite.png',
+    github: 'https://github.com/SECTL/ShowWrite',
+    docs: 'https://showwrite.sectl.top',
+    descriptionKey: 'projects.ShowWrite.description'
   }
 ])
 
