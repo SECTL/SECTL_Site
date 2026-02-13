@@ -39,31 +39,31 @@ interface Member {
 const chineseMembers: Member[] = [
   {
     name: '黎泽懿',
-    role: '创始人',
+    role: '组织创始人、SecRandom开发者',
     githubName: 'lzy98276',
     email: 'lzy.12@foxmail.com'
   },
   {
     name: '陈晋瑭',
-    role: '开发者',
+    role: '贡献者',
     githubName: 'chenjintang-shrimp',
     email: 'jimmy163mail@163.com'
   },
   {
     name: '藏狐',
-    role: '开发者',
+    role: 'SecScore开发者',
     githubName: 'Fox-block-offcial',
     email: 'system_linux_cmb@163.com'
   },
   {
     name: '叶背影',
-    role: '开发者',
+    role: '贡献者',
     githubName: 'LeafS825',
     email: '871850079@qq.com'
   },
   {
     name: '本新同学',
-    role: '开发者',
+    role: '贡献者',
     githubName: 'yuanbenxin',
     email: 'yuanbenxin@outlook.com'
   },
@@ -72,33 +72,42 @@ const chineseMembers: Member[] = [
     role: '贡献者',
     githubName: 'Jursin',
     email: 'jursin@126.com'
+  },
+  {
+    name: 'Daniel Haraguchi',
+    role: 'kazuha项目开发者',
+    githubName: 'Haraguse'
   }
 ]
 
 const englishMembers: Member[] = [
   {
     name: 'Li Zeyi',
-    role: 'Founder'
+    role: 'Organization Founder, SecRandom Developer'
   },
   {
     name: 'Chen Jintang',
-    role: 'Developer'
+    role: 'Contributor'
   },
   {
     name: 'Fox_block',
-    role: 'Developer'
+    role: 'SecScore Developer'
   },
   {
     name: 'LeafS',
-    role: 'Developer'
+    role: 'Contributor'
   },
   {
     name: 'yuanbenxin',
-    role: 'Developer'
+    role: 'Contributor'
   },
   {
     name: 'Jursin',
     role: 'Contributor'
+  },
+  {
+    name: 'Daniel Haraguchi',
+    role: 'Kazuha Developer'
   }
 ]
 
