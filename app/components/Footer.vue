@@ -22,6 +22,9 @@
             <a href="https://github.com/SECTL/Homeworklsland" target="_blank" rel="noopener">
               Homeworklsland
             </a>
+            <a href="https://github.com/SECTL/ShowWrite" target="_blank" rel="noopener">
+              ShowWrite
+            </a>
           </div>
 
           <div class="footer-section">

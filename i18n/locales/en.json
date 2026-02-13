@@ -52,7 +52,10 @@
       "description": "A universal presentation assistant tool optimized for touch screens."
     },
     "Homeworklsland": {
-      "description": "A simple, easy-to-use work board."
+      "description": "An efficient and convenient homework management tool to help students better plan and complete assignments."
+    },
+    "ShowWrite": {
+      "description": "A simple and elegant writing tool focused on providing a smooth writing experience."
     }
   },
   "team": {

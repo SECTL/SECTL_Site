@@ -62,6 +62,11 @@ const chineseMembers: Member[] = [
     email: '2215127992@qq.com'
   },
   {
+    name: 'wwcrdrvf6u',
+    role: 'ShowWrite 开发者',
+    githubName: 'wwcrdrvf6u'
+  },
+  {
     name: '叶背影',
     role: '贡献者',
     githubName: 'LeafS825',
@@ -103,6 +108,10 @@ const englishMembers: Member[] = [
   {
     name: 'Chenghao_lee',
     role: 'Homeworklsland Developer'
+  },
+  {
+    name: 'wwcrdrvf6u',
+    role: 'ShowWrite Developer'
   },
   {
     name: 'LeafS',

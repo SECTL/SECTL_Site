@@ -76,7 +76,7 @@
         <img 
           :key="colorMode.value"
           alt="Star History Chart" 
-          :src="`https://api.star-history.com/svg?repos=SECTL/SecRandom,SECTL/SecScore,SECTL/Kazuha,SECTL/Homeworklsland&type=date${colorMode.value
+          :src="`https://api.star-history.com/svg?repos=SECTL/SecRandom,SECTL/SecScore,SECTL/Kazuha,SECTL/Homeworklsland,SECTL/ShowWrite&type=date${colorMode.value
           === 'dark' ? '&theme=dark' : ''}&legend=top-left`" 
         />
       </div>
@@ -245,9 +245,17 @@ const projects = ref<Project[]>([
         platform: 'Windows',
         icon: 'devicon:windows11',
         options: [
+          { key: 'windows-setup', label: 'projects.download.Setup' }
         ]
       }
     ]
+  },
+  {
+    name: 'ShowWrite',
+    icon: '/icons/ShowWrite.png',
+    github: 'https://github.com/SECTL/ShowWrite',
+    docs: 'https://showwrite.sectl.top',
+    descriptionKey: 'projects.ShowWrite.description'
   }
 ])
 
