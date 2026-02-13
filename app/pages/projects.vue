@@ -89,7 +89,7 @@ const { t } = useI18n()
 const colorMode = useColorMode()
 import { ref, onMounted, onBeforeUnmount, type ComponentPublicInstance } from 'vue'
 
-const LANGUAGE_COLOR_URL = 'https://gh.llkk.cc/https://raw.githubusercontent.com/ozh/github-colors/master/colors.json'
+const LANGUAGE_COLOR_URL = 'https://ghproxy.sectl.top/https://raw.githubusercontent.com/ozh/github-colors/master/colors.json'
 
 const downloadDropdownRefs = ref<(Element | ComponentPublicInstance | null)[]>([])
 const showDownloadDropdown = ref<number | null>(null)
@@ -324,7 +324,7 @@ const fetchGitHubStats = async () => {
             if (!asset.name || !asset.browser_download_url) continue
 
             const filename = asset.name.toLowerCase()
-            const assetUrl = `https://gh.llkk.cc/${asset.browser_download_url}`
+            const assetUrl = `https://ghproxy.sectl.top/${asset.browser_download_url}`
 
             // 根据文件名规则将资源文件匹配到下载选项
             if (filename.includes('windows') && filename.includes('setup')) {
