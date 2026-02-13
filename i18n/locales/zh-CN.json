@@ -47,6 +47,9 @@
     },
     "SecScore": {
       "description": "一个简单易用，优雅美观的班级个人积分管理软件。"
+    },
+    "Kazuha": {
+      "description": "一个为触摸屏优化的通用演示助手工具。"
     }
   },
   "team": {

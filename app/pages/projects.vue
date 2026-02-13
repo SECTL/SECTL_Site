@@ -76,7 +76,8 @@
         <img 
           :key="colorMode.value"
           alt="Star History Chart" 
-          :src="`https://api.star-history.com/svg?repos=SECTL/SecRandom,SECTL/SecScore&type=date${colorMode.value === 'dark' ? '&theme=dark' : ''}&legend=top-left`" 
+          :src="`https://api.star-history.com/svg?repos=SECTL/SecRandom,SECTL/SecScore,SECTL/Kazuha&type=date${colorMode.value
+          === 'dark' ? '&theme=dark' : ''}&legend=top-left`" 
         />
       </div>
     </div>
@@ -213,6 +214,22 @@ const projects = ref<Project[]>([
         icon: 'ri:apple-fill',
         options: [
           { key: 'macos-dmg', label: 'dmg' }
+        ]
+      }
+    ]
+  },
+  {
+    name: 'Kazuha',
+    icon: '/icons/Kazuha.svg',
+    github: 'https://github.com/SECTL/Kazuha',
+    docs: 'https://kazuha.sectl.top',
+    descriptionKey: 'projects.Kazuha.description',
+    downloadPlatforms: [
+      {
+        platform: 'Windows',
+        icon: 'devicon:windows11',
+        options: [
+          { key: 'windows-portable', label: 'projects.download.Portable' }
         ]
       }
     ]

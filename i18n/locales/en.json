@@ -47,6 +47,9 @@
     },
     "SecScore": {
       "description": "A simple, easy-to-use, elegant and beautiful class personal points management software."
+    },
+    "Kazuha": {
+      "description": "A universal presentation assistant tool optimized for touch screens."
     }
   },
   "team": {

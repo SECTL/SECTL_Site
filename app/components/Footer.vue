@@ -16,10 +16,15 @@
             <a href="https://github.com/SECTL/SecScore" target="_blank" rel="noopener">
               SecScore
             </a>
+            <a href="https://github.com/SECTL/Kazuha" target="_blank" rel="noopener">
+              Kazuha
+            </a>
             <h4 style="margin-top: 1em;">{{ t('footer.links.title') }}</h4>
             <a href="https://forum.smart-teach.cn/" target="_blank" rel="noopener">{{ t('footer.links.stcnForum') }}</a>
             <a href="https://github.com/awesome-iwb/awesome-iwb" target="_blank" rel="noopener">Awesome-Iwb</a>
             <a href="https://acs.jursin.top/" target="_blank" rel="noopener">Awesome-Class-Softwares</a>
+            <a href="https://github.com/QQHKX/Immersive-clock" target="_blank"
+            rel="noopener">Immersive-clock</a>
           </div>
 
           <div class="footer-section">
