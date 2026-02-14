@@ -51,11 +51,11 @@
     "Kazuha": {
       "description": "A universal presentation assistant tool optimized for touch screens."
     },
-    "Homeworklsland": {
-      "description": "An efficient and convenient homework management tool to help students better plan and complete assignments."
-    },
     "ShowWrite": {
-      "description": "A simple and elegant writing tool focused on providing a smooth writing experience."
+      "description": "A simple and elegant video presentation tool designed for teaching demonstrations, making presentations more efficient and intuitive."
+    },
+    "Homeworklsland": {
+      "description": "A simple and easy-to-use homework board."
     }
   },
   "team": {

@@ -51,11 +51,11 @@
     "Kazuha": {
       "description": "一个为触摸屏优化的通用演示助手工具。"
     },
-    "Homeworklsland": {
-      "description": "一个高效便捷的作业管理工具，帮助学生更好地规划和完成作业。"
-    },
     "ShowWrite": {
-      "description": "一个简洁优雅的写作工具，专注于提供流畅的写作体验。"
+      "description": "一个简洁优雅的视频展台工具，专为教学演示设计，让展示更加高效直观。"
+    },
+    "Homeworklsland": {
+      "description": "一款简洁，易用的作业板。"
     }
   },
   "team": {
