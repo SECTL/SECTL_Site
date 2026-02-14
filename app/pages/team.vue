@@ -72,11 +72,6 @@ const chineseMembers: Member[] = [
     email: '2215127992@qq.com'
   },
   {
-    name: 'wwcrdrvf6u',
-    role: 'ShowWrite开发者',
-    githubName: 'wwcrdrvf6u'
-  },
-  {
     name: '叶背影',
     role: '贡献者',
     githubName: 'LeafS825',
