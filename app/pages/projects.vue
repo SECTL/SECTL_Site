@@ -76,7 +76,7 @@
         <img 
           :key="colorMode.value"
           alt="Star History Chart" 
-          :src="`https://api.star-history.com/svg?repos=SECTL/SecRandom,SECTL/SecScore,SECTL/Kazuha,SECTL/Homeworklsland,SECTL/ShowWrite&type=date${colorMode.value
+          :src="`https://api.star-history.com/svg?repos=SECTL/SecRandom,SECTL/SecScore,SECTL/Kazuha,SECTL/AssignSticker,SECTL/ShowWrite&type=date${colorMode.value
           === 'dark' ? '&theme=dark' : ''}&legend=top-left`" 
         />
       </div>
@@ -251,11 +251,11 @@ const projects = ref<Project[]>([
     ]
   },
   {
-    name: 'Homeworklsland',
-    icon: '/icons/Homeworklsland.png',
-    github: 'https://github.com/SECTL/Homeworklsland',
-    docs: 'https://homeworklsland.sectl.top',
-    descriptionKey: 'projects.Homeworklsland.description',
+    name: 'AssignSticker',
+    icon: '/icons/AssignSticker.png',
+    github: 'https://github.com/SECTL/AssignSticker',
+    docs: 'https://AssignSticker.sectl.top',
+    descriptionKey: 'projects.AssignSticker.description',
     downloadPlatforms: [
       {
         platform: 'Windows',

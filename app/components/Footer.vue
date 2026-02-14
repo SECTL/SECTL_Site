@@ -19,8 +19,8 @@
             <a href="https://github.com/SECTL/Kazuha" target="_blank" rel="noopener">
               Kazuha
             </a>
-            <a href="https://github.com/SECTL/Homeworklsland" target="_blank" rel="noopener">
-              Homeworklsland
+            <a href="https://github.com/SECTL/AssignSticker" target="_blank" rel="noopener">
+              AssignSticker
             </a>
             <a href="https://github.com/SECTL/ShowWrite" target="_blank" rel="noopener">
               ShowWrite

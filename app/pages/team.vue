@@ -62,7 +62,7 @@ const chineseMembers: Member[] = [
   },
   {
     name: 'Chenghao_lee',
-    role: 'Homeworklsland 开发者',
+    role: 'AssignSticker 开发者',
     githubName: 'chenghaolee-2012',
     email: '2215127992@qq.com'
   },
@@ -111,7 +111,7 @@ const englishMembers: Member[] = [
   },
   {
     name: 'Chenghao_lee',
-    role: 'Homeworklsland Developer'
+    role: 'AssignSticker Developer'
   },
   {
     name: 'LeafS',
