@@ -76,7 +76,7 @@
         <img 
           :key="colorMode.value"
           alt="Star History Chart" 
-          :src="`https://api.star-history.com/svg?repos=SECTL/SecRandom,SECTL/SecScore,SECTL/Kazuha&type=date${colorMode.value
+          :src="`https://api.star-history.com/svg?repos=SECTL/SecRandom,SECTL/SecScore,SECTL/Kazuha,SECTL/Homeworklsland,SECTL/ShowWrite&type=date${colorMode.value
           === 'dark' ? '&theme=dark' : ''}&legend=top-left`" 
         />
       </div>
@@ -596,6 +596,7 @@ useSeoMeta({
   padding: 8px 16px;
   margin-left: 30px;
   color: var(--color-text-secondary);
+  white-space: nowrap;
 }
 
 .download-menu-item Icon {

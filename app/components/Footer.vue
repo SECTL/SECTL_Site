@@ -25,12 +25,6 @@
             <a href="https://github.com/SECTL/ShowWrite" target="_blank" rel="noopener">
               ShowWrite
             </a>
-            <h4 style="margin-top: 1em;">{{ t('footer.links.title') }}</h4>
-            <a href="https://forum.smart-teach.cn/" target="_blank" rel="noopener">{{ t('footer.links.stcnForum') }}</a>
-            <a href="https://github.com/awesome-iwb/awesome-iwb" target="_blank" rel="noopener">Awesome-Iwb</a>
-            <a href="https://acs.jursin.top/" target="_blank" rel="noopener">Awesome-Class-Softwares</a>
-            <a href="https://github.com/QQHKX/Immersive-clock" target="_blank"
-            rel="noopener">Immersive-clock</a>
           </div>
 
           <div class="footer-section">
@@ -53,6 +47,13 @@
             <a href="https://space.bilibili.com/520571577" target="_blank" rel="noopener">
               <Icon name="ri:bilibili-fill" /> {{ t('contact.bilibili.title') }}
             </a>
+          </div>
+
+          <div class="footer-section">
+            <h4>{{ t('footer.links.title') }}</h4>
+            <a href="https://forum.smart-teach.cn/" target="_blank" rel="noopener">{{ t('footer.links.stcnForum') }}</a>
+            <a href="https://github.com/awesome-iwb/awesome-iwb" target="_blank" rel="noopener">Awesome-Iwb</a>
+            <a href="https://acs.jursin.top/" target="_blank" rel="noopener">Awesome-Class-Softwares</a>
           </div>
         </div>
       </div>
@@ -149,7 +150,6 @@ const currentYear = new Date().getFullYear()
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: var(--color-text);
   margin-bottom: var(--spacing-xs);
 }
