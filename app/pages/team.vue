@@ -61,11 +61,6 @@ const chineseMembers: Member[] = [
     githubName: 'wwcrdrvf6u'
   },
   {
-    name: 'wwcrdrvf6u',
-    role: 'ShowWrite开发者',
-    githubName: 'wwcrdrvf6u'
-  },
-  {
     name: 'Chenghao_lee',
     role: 'Homeworklsland 开发者',
     githubName: 'chenghaolee-2012',
