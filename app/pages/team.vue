@@ -68,13 +68,13 @@ const chineseMembers: Member[] = [
   },
   {
     name: '叶背影',
-    role: '贡献者',
+    role: '文档',
     githubName: 'LeafS825',
     email: '871850079@qq.com'
   },
   {
     name: '本新同学',
-    role: '贡献者',
+    role: '网站维护',
     githubName: 'yuanbenxin',
     email: 'yuanbenxin@outlook.com'
   },
@@ -89,6 +89,31 @@ const chineseMembers: Member[] = [
     role: '文档、网站开发',
     githubName: 'Jursin',
     email: 'jursin@126.com'
+  },
+  {
+    name: 'MacrosMeng',
+    role: '视频制作',
+    githubName: 'MacrosMeng'
+  },
+  {
+    name: 'WSXYT',
+    role: '贡献者',
+    githubName: 'WSXYT'
+  },
+  {
+    name: 'lrs2187',
+    role: '贡献者',
+    githubName: 'lrsgzs'
+  },
+  {
+    name: 'ling-qwqawa',
+    role: '文档',
+    githubName: 'ling-qwqawa'
+  },
+  {
+    name: 'NanGua-QWQ',
+    role: '贡献者',
+    githubName: 'NanGua-QWQ'
   }
 ]
 
@@ -128,6 +153,26 @@ const englishMembers: Member[] = [
   {
     name: 'Jursin',
     role: 'Documentation & Website Developer'
+  },
+  {
+    name: 'MacrosMeng',
+    role: 'Video Production'
+  },
+  {
+    name: 'WSXYT',
+    role: 'Contributor'
+  },
+  {
+    name: 'lrsgzs',
+    role: 'Contributor'
+  },
+  {
+    name: 'ling-qwqawa',
+    role: 'Documentation'
+  },
+  {
+    name: 'NanGua-QWQ',
+    role: 'Contributor'
   }
 ]
 
