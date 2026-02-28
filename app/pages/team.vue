@@ -103,7 +103,8 @@ const chineseMembers: Member[] = [
   {
     name: 'lrs2187',
     role: '贡献者',
-    githubName: 'lrsgzs'
+    githubName: 'lrsgzs',
+    email: 'liurongshuo2022@outlook.com'
   },
   {
     name: '翎',
@@ -164,7 +165,8 @@ const englishMembers: Member[] = [
   },
   {
     name: 'lrsgzs',
-    role: 'Contributor'
+    role: 'Contributor',
+    email: 'liurongshuo2022@outlook.com'
   },
   {
     name: 'ling-qwqawa',
