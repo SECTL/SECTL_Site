@@ -93,10 +93,10 @@ const chineseMembers: Member[] = [
   {
     name: 'MacrosMeng',
     role: '视频制作',
-    githubName: 'MacrosMeng'
+    githubName: 'MacroMeng'
   },
   {
-    name: 'WSXYT',
+    name: '我是小鸭头',
     role: '贡献者',
     githubName: 'WSXYT'
   },
@@ -106,7 +106,7 @@ const chineseMembers: Member[] = [
     githubName: 'lrsgzs'
   },
   {
-    name: 'ling-qwqawa',
+    name: '翎',
     role: '文档',
     githubName: 'ling-qwqawa'
   },
@@ -155,7 +155,7 @@ const englishMembers: Member[] = [
     role: 'Documentation & Website Developer'
   },
   {
-    name: 'MacrosMeng',
+    name: 'MacroMeng',
     role: 'Video Production'
   },
   {
