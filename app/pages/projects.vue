@@ -39,6 +39,10 @@
               <Icon name="ph:book-open" size="20" />
               {{ t('projects.docs') }}
             </a>
+            <a v-if="project.web" :href="project.web" target="_blank" rel="noopener" class="btn btn-ghost auto-width">
+              <Icon name="ph:globe" size="20" />
+              {{ t('projects.web') }}
+            </a>
             <div v-if="project.downloadPlatforms" class="download-dropdown" :ref="(el) => setDownloadDropdownRef(el, index)">
               <button class="btn btn-download auto-width" @click="toggleDownloadDropdown(index, $event)">
                 <Icon name="ep:download" size="20" />
@@ -76,7 +80,7 @@
         <img 
           :key="colorMode.value"
           alt="Star History Chart" 
-          :src="`https://api.star-history.com/svg?repos=SECTL/SecRandom,SECTL/SecScore,SECTL/Kazuha,SECTL/AssignSticker,SECTL/ShowWrite&type=date${colorMode.value
+          :src="`https://api.star-history.com/svg?repos=SECTL/SecRandom,SECTL/SecScore,SECTL/Kazuha,SECTL/AssignSticker,SECTL/ShowWrite,SECTL/ViewStage,SECTL/SecBoard&type=date${colorMode.value
           === 'dark' ? '&theme=dark' : ''}&legend=top-left`" 
         />
       </div>
@@ -151,6 +155,7 @@ interface Project {
   icon: string
   github: string
   docs: string
+  web?: string
   descriptionKey: string
   language?: string
   stars?: number
@@ -167,6 +172,7 @@ const projects = ref<Project[]>([
     icon: '/icons/SecRandom.png',
     github: 'https://github.com/SECTL/SecRandom',
     docs: 'https://secrandom.sectl.top',
+    web: 'https://secrandom-online.sectl.top',
     descriptionKey: 'projects.SecRandom.description',
     downloadPlatforms: [
       {
@@ -265,6 +271,31 @@ const projects = ref<Project[]>([
         ]
       }
     ]
+  },
+  {
+    name: 'ViewStage',
+    icon: '/icons/ViewStage.png',
+    github: 'https://github.com/SECTL/ViewStage',
+    docs: 'https://viewstage.sectl.top',
+    descriptionKey: 'projects.ViewStage.description',
+    downloadPlatforms: [
+      {
+        platform: 'Windows',
+        icon: 'devicon:windows11',
+        options: [
+          { key: 'windows-setup', label: 'projects.download.Setup' },
+          { key: 'windows-portable', label: 'projects.download.Portable' },
+        ]
+      }
+    ]
+  },
+  {
+    name: 'SecBoard',
+    icon: '/icons/SecBoard.png',
+    github: 'https://github.com/SECTL/SecBoard',
+    docs: 'https://secboard.sectl.top',
+    web: 'https://board.sectl.top',
+    descriptionKey: 'projects.SecBoard.description',
   }
 ])
 
@@ -372,6 +403,8 @@ const fetchGitHubStats = async () => {
             } else if (filename.includes('win') && filename.endsWith('.zip')) {
               downloadUrls['windows-portable'] = assetUrl
             } else if (filename.includes('win') && filename.endsWith('.exe')) {
+              downloadUrls['windows-setup'] = assetUrl
+            } else if (filename.endsWith('.msi')) {
               downloadUrls['windows-setup'] = assetUrl
             }
           }

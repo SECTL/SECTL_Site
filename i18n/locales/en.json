@@ -37,6 +37,7 @@
     "downloads": "Downloads",
     "github": "GitHub Repository",
     "docs": "Documentation",
+    "web": "Use Online",
     "download": {
       "title": "Download",
       "Setup": "Setup",
@@ -56,6 +57,12 @@
     },
     "AssignSticker": {
       "description": "A simple and easy-to-use homework board."
+    },
+    "ViewStage": {
+      "description": "An online web whiteboard and video presentation tool"
+    },
+    "SecBoard": {
+      "description": "A camera and document presentation application"
     }
   },
   "team": {

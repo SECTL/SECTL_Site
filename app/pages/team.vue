@@ -18,6 +18,9 @@
               <a v-if="member.email" :href="`mailto:${member.email}`">
                 <Icon name="mdi:email-outline" size="25" />
               </a>
+              <a v-if="member.website" :href="member.website" target="_blank" rel="noopener">
+                <Icon name="ph:globe" size="25" />
+              </a>
             </div>
           </div>
         </div>
@@ -34,6 +37,7 @@ interface Member {
   role: string
   githubName?: string
   email?: string
+  website?: string
 }
 
 const chineseMembers: Member[] = [
@@ -41,13 +45,15 @@ const chineseMembers: Member[] = [
     name: '黎泽懿',
     role: '组织创始人、SecRandom 开发者',
     githubName: 'lzy98276',
-    email: 'lzy.12@foxmail.com'
+    email: 'lzy.12@foxmail.com',
+    website: 'https://aionflux.cn'
   },
   {
     name: '藏狐',
     role: 'SecScore 开发者',
     githubName: 'Fox-block-offcial',
-    email: 'system_linux_cmb@163.com'
+    email: 'system_linux_cmb@163.com',
+    website: 'link3.cc/Fox_block'
   },
   {
     name: 'Daniel Haraguchi',
@@ -67,6 +73,16 @@ const chineseMembers: Member[] = [
     email: '2215127992@qq.com'
   },
   {
+    name: 'ospneam',
+    role: 'ViewStage 开发者',
+    githubName: 'ospneam'
+  },
+  {
+    name: 'wwiinnddyy',
+    role: 'SecBoard 开发者',
+    githubName: 'wwiinnddyy'
+  },
+  {
     name: '叶背影',
     role: '文档',
     githubName: 'LeafS825',
@@ -77,6 +93,11 @@ const chineseMembers: Member[] = [
     role: '网站维护',
     githubName: 'yuanbenxin',
     email: 'yuanbenxin@outlook.com'
+  },
+  {
+    name: 'QiKeZhiCao',
+    role: '贡献者',
+    githubName: 'QiKeZhiCao'
   },
   {
     name: '陈晋瑭',
@@ -116,17 +137,24 @@ const chineseMembers: Member[] = [
     name: 'NanGua-QWQ',
     role: '贡献者',
     githubName: 'NanGua-QWQ'
+  },
+  {
+    name: 'Linkon',
+    role: '贡献者',
+    githubName: 'Linkon-lcw'
   }
 ]
 
 const englishMembers: Member[] = [
   {
     name: 'Li Zeyi',
-    role: 'Organization Founder, SecRandom Developer'
+    role: 'Organization Founder, SecRandom Developer',
+    website: 'https://aionflux.cn'
   },
   {
     name: 'Fox_block',
-    role: 'SecScore Developer'
+    role: 'SecScore Developer',
+    website: 'link3.cc/Fox_block'
   },
   {
     name: 'Daniel Haraguchi',
@@ -141,11 +169,23 @@ const englishMembers: Member[] = [
     role: 'AssignSticker Developer'
   },
   {
+    name: 'ospneam',
+    role: 'ViewStage Developer'
+  },
+  {
+    name: 'wwiinnddyy',
+    role: 'SecBoard Developer'
+  },
+  {
     name: 'LeafS',
     role: 'Contributor'
   },
   {
     name: 'yuanbenxin',
+    role: 'Contributor'
+  },
+  {
+    name: 'QiKeZhiCao',
     role: 'Contributor'
   },
   {
@@ -177,6 +217,10 @@ const englishMembers: Member[] = [
   {
     name: 'NanGua-QWQ',
     role: 'Contributor'
+  },
+  {
+    name: 'Linkon',
+    role: 'Contributor'
   }
 ]
 
@@ -186,6 +230,7 @@ const currentMembers = computed(() => {
     ...member,
     githubName: member.githubName ?? chineseMembers[index]?.githubName,
     email: member.email ?? chineseMembers[index]?.email,
+    website: member.website ?? chineseMembers[index]?.website,
     roleDisplay: member.role
   }))
 })

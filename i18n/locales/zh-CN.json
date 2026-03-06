@@ -37,6 +37,7 @@
     "downloads": "下载",
     "github": "GitHub 仓库",
     "docs": "文档",
+    "web": "在线使用",
     "download": {
       "title": "下载",
       "Setup": "安装程序",
@@ -56,6 +57,12 @@
     },
     "AssignSticker": {
       "description": "一款简洁，易用的作业板。"
+    },
+    "ViewStage": {
+      "description": "一个在线网页白板与视频展台"
+    },
+    "SecBoard": {
+      "description": "一个摄像头、文档的展台应用"
     }
   },
   "team": {
