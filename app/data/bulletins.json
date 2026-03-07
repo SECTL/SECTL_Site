@@ -26,6 +26,19 @@
     }
   },
   {
+    "slug": "project-benefits",
+    "date": "2026-03-06",
+    "contentPath": "/bulletins/project-benefits.html",
+    "zh": {
+      "title": "新项目加入 SECTL 组织的扶持与权益说明",
+      "description": "详细介绍新项目加入 SECTL 后可获得的资源扶持、技术协助及组织权益。"
+    },
+    "en": {
+      "title": "Support and Benefits for New Projects Joining SECTL",
+      "description": "Details on resources, technical assistance, and organizational benefits available to new projects joining SECTL."
+    }
+  },
+  {
     "slug": "mc-server",
     "date": "2026-02-07",
     "contentPath": "/bulletins/mc-server.html",
