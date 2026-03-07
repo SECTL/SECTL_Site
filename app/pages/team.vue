@@ -95,7 +95,7 @@ const chineseMembers: Member[] = [
     email: 'yuanbenxin@outlook.com'
   },
   {
-    name: 'QiKeZhiCao',
+    name: '弃稞之草',
     role: '贡献者',
     githubName: 'QiKeZhiCao'
   },
