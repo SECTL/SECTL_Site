@@ -53,7 +53,7 @@ const chineseMembers: Member[] = [
     role: 'SecScore 开发者',
     githubName: 'Fox-block-offcial',
     email: 'system_linux_cmb@163.com',
-    website: 'link3.cc/Fox_block'
+    website: 'https://link3.cc/Fox_block'
   },
   {
     name: 'Daniel Haraguchi',
@@ -154,7 +154,7 @@ const englishMembers: Member[] = [
   {
     name: 'Fox_block',
     role: 'SecScore Developer',
-    website: 'link3.cc/Fox_block'
+    website: 'https://link3.cc/Fox_block'
   },
   {
     name: 'Daniel Haraguchi',
