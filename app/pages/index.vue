@@ -28,6 +28,10 @@
               <Icon name="ph:newspaper" size="20" />
               {{ t('home.viewBulletin') }}
             </NuxtLink>
+            <a href="https://auth.sectl.top" target="_blank" rel="noopener" class="btn">
+              <Icon name="ph:user-circle" size="20" />
+              {{ t('home.sectlAccount') }}
+            </a>
             <a href="https://github.com/SECTL" target="_blank" rel="noopener" class="btn btn-ghost">
               <Icon name="mdi:github" size="20" />
               {{ t('home.githubPage') }}
