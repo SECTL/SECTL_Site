@@ -56,7 +56,7 @@ const chineseMembers: Member[] = [
     website: 'https://link3.cc/Fox_block'
   },
   {
-    name: 'Daniel Haraguchi',
+    name: '原口正来',
     role: 'kazuha 开发者',
     githubName: 'Haraguse',
     email: 'chihuyou90@gmail.com'
